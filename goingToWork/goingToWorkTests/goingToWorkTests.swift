@@ -2,8 +2,8 @@
 //  goingToWorkTests.swift
 //  goingToWorkTests
 //
-//  Created by Meshary Alsehly on 10/21/19.
-//  Copyright © 2019 Gannon. All rights reserved.
+//  Created by Warendorf, Kai on 10/21/19.
+//  Copyright © 2019 Gannon University. All rights reserved.
 //
 
 import XCTest

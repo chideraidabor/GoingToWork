@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50F591272368F1EE00DCFC63 /* GameBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F591262368F1EE00DCFC63 /* GameBoard.storyboard */; };
 		B899219B235E468C00EDB8AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B899219A235E468C00EDB8AF /* AppDelegate.swift */; };
 		B899219D235E468C00EDB8AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B899219C235E468C00EDB8AF /* ViewController.swift */; };
 		B89921A0235E468C00EDB8AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B899219E235E468C00EDB8AF /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50F591262368F1EE00DCFC63 /* GameBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameBoard.storyboard; sourceTree = "<group>"; };
 		B8992197235E468C00EDB8AF /* goingToWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goingToWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B899219A235E468C00EDB8AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B899219C235E468C00EDB8AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50F591252368F15B00DCFC63 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B899219E235E468C00EDB8AF /* Main.storyboard */,
+				B89921A6235E468D00EDB8AF /* LaunchScreen.storyboard */,
+				50F591262368F1EE00DCFC63 /* GameBoard.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		B899218E235E468C00EDB8AF = {
 			isa = PBXGroup;
 			children = (
@@ -99,11 +111,10 @@
 		B8992199235E468C00EDB8AF /* goingToWork */ = {
 			isa = PBXGroup;
 			children = (
+				50F591252368F15B00DCFC63 /* Storyboards */,
 				B899219A235E468C00EDB8AF /* AppDelegate.swift */,
 				B899219C235E468C00EDB8AF /* ViewController.swift */,
-				B899219E235E468C00EDB8AF /* Main.storyboard */,
 				B89921A4235E468D00EDB8AF /* Assets.xcassets */,
-				B89921A6235E468D00EDB8AF /* LaunchScreen.storyboard */,
 				B89921A9235E468D00EDB8AF /* Info.plist */,
 				B89921A1235E468C00EDB8AF /* goingToWork.xcdatamodeld */,
 			);
@@ -232,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50F591272368F1EE00DCFC63 /* GameBoard.storyboard in Resources */,
 				B89921A8235E468D00EDB8AF /* LaunchScreen.storyboard in Resources */,
 				B89921A5235E468D00EDB8AF /* Assets.xcassets in Resources */,
 				B89921A0235E468C00EDB8AF /* Main.storyboard in Resources */,

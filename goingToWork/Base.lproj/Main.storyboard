@@ -83,6 +83,16 @@
             </objects>
             <point key="canvasLocation" x="10.980966325036603" y="16.9921875"/>
         </scene>
+        <!--charDetailScreen-->
+        <scene sceneID="k6G-Mp-tR2">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="mainScreen" storyboardName="PlayerCharDetail" referencedIdentifier="charDetailScreen" id="jSc-Cb-igR" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dz2-Fs-igZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HmN-9b-AVL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84" y="-229"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Game Board" width="3370" height="3391"/>

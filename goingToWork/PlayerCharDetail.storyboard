@@ -95,7 +95,7 @@
         <!--Vehicle-->
         <scene sceneID="QTp-aX-Ffi">
             <objects>
-                <viewControllerPlaceholder referencedIdentifier="Vehicle" id="97k-MM-wyH" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Vehicle" referencedIdentifier="Vehicle" id="97k-MM-wyH" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="dSn-Hb-e2y"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kKq-3r-mwb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

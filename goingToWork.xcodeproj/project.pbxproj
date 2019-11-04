@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		245D26582370A0D5005070BE /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 245D26572370A0D5005070BE /* Setting.storyboard */; };
 		50F591272368F1EE00DCFC63 /* GameBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F591262368F1EE00DCFC63 /* GameBoard.storyboard */; };
 		675431D2236643D70004EF25 /* 9A1E4006134A4F7E8031723821238143.png in Resources */ = {isa = PBXBuildFile; fileRef = 675431D1236643D60004EF25 /* 9A1E4006134A4F7E8031723821238143.png */; };
 		ABCCC8D723662FFC002463E3 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCCC8D623662FFC002463E3 /* Board.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		245D26572370A0D5005070BE /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		50F591262368F1EE00DCFC63 /* GameBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameBoard.storyboard; sourceTree = "<group>"; };
 		675431D1236643D60004EF25 /* 9A1E4006134A4F7E8031723821238143.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9A1E4006134A4F7E8031723821238143.png; sourceTree = "<group>"; };
 		ABCCC8D623662FFC002463E3 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				B89921A6235E468D00EDB8AF /* LaunchScreen.storyboard */,
 				B899219E235E468C00EDB8AF /* Main.storyboard */,
 				50F591262368F1EE00DCFC63 /* GameBoard.storyboard */,
+				245D26572370A0D5005070BE /* Setting.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				B89921A8235E468D00EDB8AF /* LaunchScreen.storyboard in Resources */,
 				B89921A5235E468D00EDB8AF /* Assets.xcassets in Resources */,
 				B89921A0235E468C00EDB8AF /* Main.storyboard in Resources */,
+				245D26582370A0D5005070BE /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

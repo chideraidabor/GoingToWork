@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/do006/Library/Mobile Documents/com~apple~CloudDocs/gotowork2/goingtowork/goingToWork/Main.storyboard">
-   </FileRef>
-   <FileRef
-      location = "self:">
+      location = "self:goingToWork.xcodeproj">
    </FileRef>
 </Workspace>

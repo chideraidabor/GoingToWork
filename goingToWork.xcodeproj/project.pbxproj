@@ -22,6 +22,8 @@
 		B89921A8235E468D00EDB8AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B89921A6235E468D00EDB8AF /* LaunchScreen.storyboard */; };
 		B89921B3235E468D00EDB8AF /* goingToWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89921B2235E468D00EDB8AF /* goingToWorkTests.swift */; };
 		B89921BE235E468D00EDB8AF /* goingToWorkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89921BD235E468D00EDB8AF /* goingToWorkUITests.swift */; };
+		E961BDF02370C251006D383E /* GameInstructions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E961BDEF2370C251006D383E /* GameInstructions.storyboard */; };
+		E961BE2F2370D146006D383E /* GameInstructionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E961BE2E2370D146006D383E /* GameInstructionsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		B89921B9235E468D00EDB8AF /* goingToWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = goingToWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B89921BD235E468D00EDB8AF /* goingToWorkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goingToWorkUITests.swift; sourceTree = "<group>"; };
 		B89921BF235E468D00EDB8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E961BDEF2370C251006D383E /* GameInstructions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameInstructions.storyboard; sourceTree = "<group>"; };
+		E961BE2E2370D146006D383E /* GameInstructionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInstructionsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,8 @@
 				B89921A9235E468D00EDB8AF /* Info.plist */,
 				675431D1236643D60004EF25 /* 9A1E4006134A4F7E8031723821238143.png */,
 				B89921A1235E468C00EDB8AF /* goingToWork.xcdatamodeld */,
+				E961BDEF2370C251006D383E /* GameInstructions.storyboard */,
+				E961BE2E2370D146006D383E /* GameInstructionsVC.swift */,
 			);
 			path = goingToWork;
 			sourceTree = "<group>";
@@ -266,6 +272,7 @@
 				16CB46A8236783F2007A87C6 /* PlayerCharDetail.storyboard in Resources */,
 				B89921A8235E468D00EDB8AF /* LaunchScreen.storyboard in Resources */,
 				B89921A5235E468D00EDB8AF /* Assets.xcassets in Resources */,
+				E961BDF02370C251006D383E /* GameInstructions.storyboard in Resources */,
 				B89921A0235E468C00EDB8AF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +303,7 @@
 				B899219B235E468C00EDB8AF /* AppDelegate.swift in Sources */,
 				ABCCC8D723662FFC002463E3 /* Board.swift in Sources */,
 				ABCCC8D923663012002463E3 /* Player.swift in Sources */,
+				E961BE2F2370D146006D383E /* GameInstructionsVC.swift in Sources */,
 				B89921A3235E468C00EDB8AF /* goingToWork.xcdatamodeld in Sources */,
 				16CB46A7236783F2007A87C6 /* PlayerCharDetail.swift in Sources */,
 			);

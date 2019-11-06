@@ -43,7 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		16C02B12236F735300546750 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = "/Users/do006/Library/Mobile Documents/com~apple~CloudDocs/gotowork2/goingtowork/goingToWork/Main.storyboard"; sourceTree = "<absolute>"; };
 		16CB46A5236783F2007A87C6 /* PlayerCharDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCharDetail.swift; sourceTree = "<group>"; };
 		16CB46A6236783F2007A87C6 /* PlayerCharDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlayerCharDetail.storyboard; sourceTree = "<group>"; };
 		503EFE2A236F68AB000BD5B0 /* Vehicle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vehicle.storyboard; sourceTree = "<group>"; };
@@ -133,7 +132,6 @@
 				16CB46A5236783F2007A87C6 /* PlayerCharDetail.swift */,
 				B899219C235E468C00EDB8AF /* ViewController.swift */,
 				ABCCC8D623662FFC002463E3 /* Board.swift */,
-				16C02B12236F735300546750 /* Main.storyboard */,
 				ABCCC8D823663012002463E3 /* Player.swift */,
 				ABCCC8DA23663025002463E3 /* Game.swift */,
 				B89921A4235E468D00EDB8AF /* Assets.xcassets */,

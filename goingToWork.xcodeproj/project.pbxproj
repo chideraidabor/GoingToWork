@@ -18,6 +18,7 @@
 		ABCCC8DB23663025002463E3 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCCC8DA23663025002463E3 /* Game.swift */; };
 		B899219B235E468C00EDB8AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B899219A235E468C00EDB8AF /* AppDelegate.swift */; };
 		B899219D235E468C00EDB8AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B899219C235E468C00EDB8AF /* ViewController.swift */; };
+        B89921A0235E468C00EDB8AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B899219E235E468C00EDB8AF /* Main.storyboard */; };
 		B89921A3235E468C00EDB8AF /* goingToWork.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B89921A1235E468C00EDB8AF /* goingToWork.xcdatamodeld */; };
 		B89921A5235E468D00EDB8AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B89921A4235E468D00EDB8AF /* Assets.xcassets */; };
 		B89921A8235E468D00EDB8AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B89921A6235E468D00EDB8AF /* LaunchScreen.storyboard */; };
@@ -96,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				B89921A6235E468D00EDB8AF /* LaunchScreen.storyboard */,
+				B899219E235E468C00EDB8AF /* Main.storyboard */,
 				50F591262368F1EE00DCFC63 /* GameBoard.storyboard */,
 				677E88BC236F6B270058F086 /* selectNoPlayer.storyboard */,
 				503EFE2A236F68AB000BD5B0 /* Vehicle.storyboard */,

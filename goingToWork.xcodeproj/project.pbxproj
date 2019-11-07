@@ -22,7 +22,6 @@
 		B89921A8235E468D00EDB8AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B89921A6235E468D00EDB8AF /* LaunchScreen.storyboard */; };
 		B89921B3235E468D00EDB8AF /* goingToWorkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89921B2235E468D00EDB8AF /* goingToWorkTests.swift */; };
 		B89921BE235E468D00EDB8AF /* goingToWorkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89921BD235E468D00EDB8AF /* goingToWorkUITests.swift */; };
-		E961BE7023736A66006D383E /* GameSpinnerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E961BE6F23736A66006D383E /* GameSpinnerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +63,6 @@
 		B89921B9235E468D00EDB8AF /* goingToWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = goingToWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B89921BD235E468D00EDB8AF /* goingToWorkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goingToWorkUITests.swift; sourceTree = "<group>"; };
 		B89921BF235E468D00EDB8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E961BE6F23736A66006D383E /* GameSpinnerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSpinnerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +135,6 @@
 				B89921A9235E468D00EDB8AF /* Info.plist */,
 				675431D1236643D60004EF25 /* 9A1E4006134A4F7E8031723821238143.png */,
 				B89921A1235E468C00EDB8AF /* goingToWork.xcdatamodeld */,
-				E961BE6F23736A66006D383E /* GameSpinnerVC.swift */,
 			);
 			path = goingToWork;
 			sourceTree = "<group>";
@@ -294,7 +291,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E961BE7023736A66006D383E /* GameSpinnerVC.swift in Sources */,
 				B899219D235E468C00EDB8AF /* ViewController.swift in Sources */,
 				ABCCC8DB23663025002463E3 /* Game.swift in Sources */,
 				B899219B235E468C00EDB8AF /* AppDelegate.swift in Sources */,

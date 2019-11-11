@@ -30,6 +30,10 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                                 <state key="normal" title="Back"/>
+                                                <connections>
+                                                    <action selector="CloseModal:" destination="oHU-2c-lWm" eventType="touchUpInside" id="4xk-rD-NLo"/>
+                                                    <action selector="CloseWindow:" destination="rdA-32-9om" eventType="touchUpInside" id="Wb8-Wx-3Bd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjW-af-x3j">
                                                 <rect key="frame" x="545" y="1813" width="276" height="120"/>
@@ -116,6 +120,7 @@ Directions:
                     <size key="freeformSize" width="1366" height="2000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Qe-gA-cxy" sceneMemberID="firstResponder"/>
+                <exit id="oHU-2c-lWm" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="122" y="56"/>
         </scene>

@@ -26,7 +26,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BOG-8a-tzg">
                                 <rect key="frame" x="395" y="415" width="379" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="43"/>
                                 <state key="normal" title="Start Game">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -35,10 +35,6 @@
                                     <segue destination="xgL-fn-EPR" kind="show" id="aoM-tc-AJq"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="info" translatesAutoresizingMaskIntoConstraints="NO" id="FEl-M9-195">
-                                <rect key="frame" x="1090" y="0.0" width="124" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="vJ7-08-kyT">
                                 <rect key="frame" x="-52" y="533" width="265" height="301"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -63,14 +59,35 @@
                                 <rect key="frame" x="685" y="533" width="274" height="301"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swc-X0-nRW">
+                                <rect key="frame" x="1087" y="-13" width="124" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="78"/>
+                                <state key="normal" title="ⓘ">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="FNL-6n-nQE" kind="show" id="OUY-SM-dTC"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.64031976461410522" green="0.75120824575424194" blue="0.23119467496871948" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.74833202359999995" green="0.87995523210000004" blue="0.98825246099999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="10.552763819095478" y="16.546762589928058"/>
+        </scene>
+        <!--instructions-->
+        <scene sceneID="OPd-HG-JkS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GameInstructions" referencedIdentifier="instructions" id="FNL-6n-nQE" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yaT-sT-oWo"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ud9-Sv-BP1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="407" y="-263"/>
         </scene>
         <!--selectPlayer-->
         <scene sceneID="H1h-gg-5fd">
@@ -90,6 +107,5 @@
         <image name="4" width="3600" height="3600"/>
         <image name="5" width="3600" height="3600"/>
         <image name="6" width="3600" height="3600"/>
-        <image name="info" width="512" height="512"/>
     </resources>
 </document>

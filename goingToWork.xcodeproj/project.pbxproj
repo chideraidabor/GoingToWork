@@ -107,6 +107,7 @@
 			children = (
 				B89921A6235E468D00EDB8AF /* LaunchScreen.storyboard */,
 				16CDE42523736F4500299EA6 /* Main.storyboard */,
+				E961BDEF2370C251006D383E /* GameInstructions.storyboard */,
 				50F591262368F1EE00DCFC63 /* GameBoard.storyboard */,
 				677E88BC236F6B270058F086 /* selectNoPlayer.storyboard */,
 				503EFE2A236F68AB000BD5B0 /* Vehicle.storyboard */,
@@ -151,7 +152,6 @@
 				B89921A9235E468D00EDB8AF /* Info.plist */,
 				675431D1236643D60004EF25 /* 9A1E4006134A4F7E8031723821238143.png */,
 				B89921A1235E468C00EDB8AF /* goingToWork.xcdatamodeld */,
-				E961BDEF2370C251006D383E /* GameInstructions.storyboard */,
 				E961BE2E2370D146006D383E /* GameInstructionsVC.swift */,
 			);
 			path = goingToWork;

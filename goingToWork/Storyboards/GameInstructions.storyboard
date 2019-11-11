@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="ipad12_9rounded" orientation="landscape">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,13 +11,13 @@
         <!--View Controller-->
         <scene sceneID="pIV-iD-Opp">
             <objects>
-                <viewController id="rdA-32-9om" customClass="ViewController" customModule="JustTryingSomething" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="instructions" id="rdA-32-9om" customClass="ViewController" customModule="goingToWork" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CSG-9S-1cp">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="2000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iuT-VM-X7R">
-                                <rect key="frame" x="0.0" y="24" width="1366" height="1976"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="2000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1s6-ke-lrK">
                                         <rect key="frame" x="0.0" y="0.0" width="1366" height="2000"/>
@@ -44,8 +42,8 @@
                                             </button>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Mbt-20-Dge">
                                                 <rect key="frame" x="42" y="241" width="1283" height="1500"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <mutableString key="text">Object of the Game:
+                                                <color key="backgroundColor" red="0.74833202359999995" green="0.87995523210000004" blue="0.98825246099999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <string key="text">Object of the Game:
 
 •	You will go on a road trip to get to work. 
 
@@ -74,12 +72,12 @@ Directions:
 
 •	Or if you land on a Top, Bottom, or Hat Uniform space and you have that one already, you wait for your next turn. 
 
-•	Each child will take a turn until one player gets their whole uniform. That player goes to the end space, which is their workplace. They win the game and can start their work day!</mutableString>
+•	Each child will take a turn until one player gets their whole uniform. That player goes to the end space, which is their workplace. They win the game and can start their work day!</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" red="0.74833202359999995" green="0.87995523210000004" blue="0.98825246099999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstItem="Mbt-20-Dge" firstAttribute="top" secondItem="Lmv-sZ-k0E" secondAttribute="bottom" constant="70" id="0UH-Ca-MMW"/>
                                             <constraint firstItem="Lmv-sZ-k0E" firstAttribute="top" secondItem="1s6-ke-lrK" secondAttribute="top" constant="51" id="BNS-WE-6CE"/>

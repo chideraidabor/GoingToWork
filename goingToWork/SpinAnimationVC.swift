@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SpinAnimationVC: UIViewController {
+class SpinAnimationVC: gameboardViewController {
     
     @IBOutlet weak var Spinner: UIImageView!
     

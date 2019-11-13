@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CKD-GB-khw">
-    <device id="ipad12_9" orientation="landscape" layout="fullscreen" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CKD-GB-khw">
+    <device id="ipad12_9" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,21 +18,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="La_Boutique_Dei_Colori_Car02" translatesAutoresizingMaskIntoConstraints="NO" id="Tt5-Qm-lmW">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="La_Boutique_Dei_Colori_Car02" translatesAutoresizingMaskIntoConstraints="NO" id="Tt5-Qm-lmW">
                                 <rect key="frame" x="307" y="323" width="313" height="180"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Tt5-Qm-lmW" secondAttribute="height" multiplier="313:180" id="f96-0Y-jji"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="La_Boutique_Dei_Colori_Car25" translatesAutoresizingMaskIntoConstraints="NO" id="CYh-vD-ri7">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="La_Boutique_Dei_Colori_Car25" translatesAutoresizingMaskIntoConstraints="NO" id="CYh-vD-ri7">
                                 <rect key="frame" x="307" y="580" width="313" height="180"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="313" id="qKr-vf-rUm"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="La_Boutique_Dei_Colori_Car39" translatesAutoresizingMaskIntoConstraints="NO" id="hRy-C5-eYb">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="La_Boutique_Dei_Colori_Car39" translatesAutoresizingMaskIntoConstraints="NO" id="hRy-C5-eYb">
                                 <rect key="frame" x="738" y="580" width="313" height="180"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="Qcc-90-n3L"/>
+                                    <constraint firstAttribute="width" constant="313" id="hVs-3b-tkd"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="La_Boutique_Dei_Colori_Car12" translatesAutoresizingMaskIntoConstraints="NO" id="kHj-5l-Tzh">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="La_Boutique_Dei_Colori_Car12" translatesAutoresizingMaskIntoConstraints="NO" id="kHj-5l-Tzh">
                                 <rect key="frame" x="738" y="323" width="313" height="180"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kHj-5l-Tzh" secondAttribute="height" multiplier="313:180" id="NC8-Sb-cx1"/>
+                                </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Choose your vehicle" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fDE-DB-4Hp">
                                 <rect key="frame" x="396" y="159" width="545" height="58"/>
@@ -39,9 +50,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdl-eP-a28">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdl-eP-a28">
                                 <rect key="frame" x="595" y="768" width="176" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Zdl-eP-a28" secondAttribute="height" multiplier="176:83" id="87H-Pz-tYe"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Play Game">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -52,6 +65,22 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.69649514476135277" green="0.87077563289590643" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="CYh-vD-ri7" firstAttribute="leading" secondItem="qtt-lk-3RX" secondAttribute="leading" constant="307" id="4tQ-u3-vv5"/>
+                            <constraint firstItem="hRy-C5-eYb" firstAttribute="trailing" secondItem="kHj-5l-Tzh" secondAttribute="trailing" id="E8o-ra-uI4"/>
+                            <constraint firstItem="hRy-C5-eYb" firstAttribute="top" secondItem="kHj-5l-Tzh" secondAttribute="bottom" constant="77" id="Gjm-Gn-pkI"/>
+                            <constraint firstItem="CYh-vD-ri7" firstAttribute="top" secondItem="Tt5-Qm-lmW" secondAttribute="bottom" constant="77" id="LNr-PK-kZ0"/>
+                            <constraint firstItem="qtt-lk-3RX" firstAttribute="trailing" secondItem="hRy-C5-eYb" secondAttribute="trailing" constant="315" id="LSF-LT-aG5"/>
+                            <constraint firstItem="CYh-vD-ri7" firstAttribute="leading" secondItem="Tt5-Qm-lmW" secondAttribute="leading" id="LVQ-Qy-AXV"/>
+                            <constraint firstItem="hRy-C5-eYb" firstAttribute="leading" secondItem="kHj-5l-Tzh" secondAttribute="leading" id="NXp-SG-I8s"/>
+                            <constraint firstItem="CYh-vD-ri7" firstAttribute="trailing" secondItem="Tt5-Qm-lmW" secondAttribute="trailing" id="OAw-LZ-hsa"/>
+                            <constraint firstItem="hRy-C5-eYb" firstAttribute="top" secondItem="CYh-vD-ri7" secondAttribute="top" id="g5k-uN-LO9"/>
+                            <constraint firstItem="Zdl-eP-a28" firstAttribute="top" secondItem="hRy-C5-eYb" secondAttribute="bottom" constant="8" symbolic="YES" id="hr0-ZU-GMq"/>
+                            <constraint firstItem="Zdl-eP-a28" firstAttribute="centerX" secondItem="VnW-WO-Lfy" secondAttribute="centerX" id="l41-MO-qg6"/>
+                            <constraint firstItem="Zdl-eP-a28" firstAttribute="top" secondItem="CYh-vD-ri7" secondAttribute="bottom" constant="8" symbolic="YES" id="lpX-ui-Sw2"/>
+                            <constraint firstItem="qtt-lk-3RX" firstAttribute="bottom" secondItem="Zdl-eP-a28" secondAttribute="bottom" constant="173" id="ujY-Km-j5n"/>
+                            <constraint firstItem="Zdl-eP-a28" firstAttribute="leading" secondItem="qtt-lk-3RX" secondAttribute="leading" constant="595" id="xyH-p4-Bx4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qtt-lk-3RX"/>
                     </view>
                 </viewController>

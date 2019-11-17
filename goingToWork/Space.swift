@@ -12,6 +12,9 @@ class Space : UIBezierPath {
     var myBox:CGRect
     var myShapeLayer:CAShapeLayer
     
+    
+   
+    
     init(ULCorner:CGPoint, LRCorner:CGPoint) {
         let spaceSize:CGSize = CGSize(width: LRCorner.x - ULCorner.x, height: LRCorner.y - ULCorner.y)
         myBox = CGRect(origin: ULCorner, size: spaceSize)
@@ -25,11 +28,15 @@ class Space : UIBezierPath {
         close()
         
         myShapeLayer.path = self.cgPath
-        myShapeLayer.fillColor = UIColor.green                 .cgColor
+        myShapeLayer.fillColor = UIColor.blue.cgColor
     }
+    
+    
      // We need to implement init(coder) to avoid compilation errors
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    
 }
 

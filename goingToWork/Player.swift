@@ -2,7 +2,7 @@
 //  Player.swift
 //  goingToWork
 //
-//  Created by Nelson Castillo on 10/27/19.
+//  Created by Idabor, Chidera L on 11/11/19.
 //  Copyright © 2019 Gannon University. All rights reserved.
 //
 

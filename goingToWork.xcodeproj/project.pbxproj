@@ -13,9 +13,10 @@
 		503EFE2B236F68AB000BD5B0 /* Vehicle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 503EFE2A236F68AB000BD5B0 /* Vehicle.storyboard */; };
 		50F591272368F1EE00DCFC63 /* GameBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F591262368F1EE00DCFC63 /* GameBoard.storyboard */; };
 		675431D2236643D70004EF25 /* 9A1E4006134A4F7E8031723821238143.png in Resources */ = {isa = PBXBuildFile; fileRef = 675431D1236643D60004EF25 /* 9A1E4006134A4F7E8031723821238143.png */; };
+		676BC71A237A055E004B39AE /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676BC719237A055E004B39AE /* Player.swift */; };
 		677E88BD236F6B270058F086 /* selectNoPlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 677E88BC236F6B270058F086 /* selectNoPlayer.storyboard */; };
 		ABCCC8D723662FFC002463E3 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCCC8D623662FFC002463E3 /* Board.swift */; };
-		ABCCC8D923663012002463E3 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCCC8D823663012002463E3 /* Player.swift */; };
+		ABCCC8D923663012002463E3 /* PlayerPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCCC8D823663012002463E3 /* PlayerPickerController.swift */; };
 		ABCCC8DB23663025002463E3 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCCC8DA23663025002463E3 /* Game.swift */; };
 		B899219B235E468C00EDB8AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B899219A235E468C00EDB8AF /* AppDelegate.swift */; };
 		B899219D235E468C00EDB8AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B899219C235E468C00EDB8AF /* ViewController.swift */; };
@@ -54,9 +55,10 @@
 		503EFE2A236F68AB000BD5B0 /* Vehicle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vehicle.storyboard; sourceTree = "<group>"; };
 		50F591262368F1EE00DCFC63 /* GameBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameBoard.storyboard; sourceTree = "<group>"; };
 		675431D1236643D60004EF25 /* 9A1E4006134A4F7E8031723821238143.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9A1E4006134A4F7E8031723821238143.png; sourceTree = "<group>"; };
+		676BC719237A055E004B39AE /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		677E88BC236F6B270058F086 /* selectNoPlayer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = selectNoPlayer.storyboard; sourceTree = "<group>"; };
 		ABCCC8D623662FFC002463E3 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
-		ABCCC8D823663012002463E3 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		ABCCC8D823663012002463E3 /* PlayerPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPickerController.swift; sourceTree = "<group>"; };
 		ABCCC8DA23663025002463E3 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		B8992197235E468C00EDB8AF /* goingToWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goingToWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B899219A235E468C00EDB8AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,16 +145,17 @@
 				16CB46A5236783F2007A87C6 /* PlayerCharDetail.swift */,
 				B899219C235E468C00EDB8AF /* ViewController.swift */,
 				ABCCC8D623662FFC002463E3 /* Board.swift */,
-				ABCCC8D823663012002463E3 /* Player.swift */,
+				ABCCC8D823663012002463E3 /* PlayerPickerController.swift */,
 				ABCCC8DA23663025002463E3 /* Game.swift */,
 				E98A47BE2375F4AF003DEC8E /* Vehicle.swift */,
 				E9E3E7F12374E5A300D636F2 /* SpinAnimationVC.swift */,
+				676BC719237A055E004B39AE /* Player.swift */,
+				E961BE2E2370D146006D383E /* GameInstructionsVC.swift */,
 				B89921A4235E468D00EDB8AF /* Assets.xcassets */,
 				B89921A9235E468D00EDB8AF /* Info.plist */,
 				675431D1236643D60004EF25 /* 9A1E4006134A4F7E8031723821238143.png */,
 				B89921A1235E468C00EDB8AF /* goingToWork.xcdatamodeld */,
 				E961BDEF2370C251006D383E /* GameInstructions.storyboard */,
-				E961BE2E2370D146006D383E /* GameInstructionsVC.swift */,
 			);
 			path = goingToWork;
 			sourceTree = "<group>";
@@ -312,12 +315,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				676BC71A237A055E004B39AE /* Player.swift in Sources */,
 				B899219D235E468C00EDB8AF /* ViewController.swift in Sources */,
 				E9E3E7F22374E5A300D636F2 /* SpinAnimationVC.swift in Sources */,
 				ABCCC8DB23663025002463E3 /* Game.swift in Sources */,
 				B899219B235E468C00EDB8AF /* AppDelegate.swift in Sources */,
 				ABCCC8D723662FFC002463E3 /* Board.swift in Sources */,
-				ABCCC8D923663012002463E3 /* Player.swift in Sources */,
+				ABCCC8D923663012002463E3 /* PlayerPickerController.swift in Sources */,
 				E961BE2F2370D146006D383E /* GameInstructionsVC.swift in Sources */,
 				B89921A3235E468C00EDB8AF /* goingToWork.xcdatamodeld in Sources */,
 				E98A47BF2375F4AF003DEC8E /* Vehicle.swift in Sources */,

@@ -6,7 +6,7 @@
         <attribute name="playerPosition" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="profession" optional="YES" attributeType="String"/>
         <attribute name="spin" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="vehicleImage" optional="YES" attributeType="String"/>
+        <attribute name="vehicleImage" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
     </entity>
     <elements>
         <element name="Entity" positionX="-54" positionY="-9" width="128" height="133"/>

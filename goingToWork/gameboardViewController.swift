@@ -14,16 +14,12 @@ class gameboardViewController: UIViewController {
     
     var mySpaces = [Space]()
     
-    fileprivate func initializeGameSpacesOnScreen(_ mySpaces: inout [Space]) {
+    fileprivate func initializeGameSpacesOnScreen(_ mySpaces: inout [Space], boundingBox: CGRect) {
         
-      
-        
-       
-        
+        //let perfectBoundingBox = CGRect(x: 0, y: 0, width: <#T##CGFloat#>, height: <#T##CGFloat#>)
         
         let rectangle1 = Space.init(ULCorner: CGPoint.init(x: 50, y: 50), LRCorner: CGPoint.init(x: 275, y: 150))
         self.view.layer.addSublayer(rectangle1.myShapeLayer)
-        
         
         let rectangle2 = Space.init(ULCorner: CGPoint.init(x: 75, y: 150), LRCorner: CGPoint.init(x: 175, y: 225))
         self.view.layer.addSublayer(rectangle2.myShapeLayer)
@@ -174,13 +170,10 @@ class gameboardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        
+
         /*let Space = UIView()
         Space.backgroundColor = .white
-        
         Space.addSubview(view)
-        
-        
         Space.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor)
         */
         
@@ -191,7 +184,7 @@ class gameboardViewController: UIViewController {
      
         // CREATE A LIST OF 32 RECTANGLES
 
-        initializeGameSpacesOnScreen(&mySpaces)
+        initializeGameSpacesOnScreen(&mySpaces, boundingBox: self.view.bounds)
         
     }
     
@@ -220,14 +213,15 @@ class gameboardViewController: UIViewController {
   
 }
 
-/*extension UIView{
+/*
+    extension UIView{
     func anchor(top: NSLayoutYAxisAnchor,leading:NSLayoutXAxisAnchor, bottom: NSLayoutYAxisAnchor, trailing: NSLayoutXAxisAnchor){
         
         translatesAutoresizingMaskIntoConstraints = false
-        topAnchor.constraint(equalTo: top).isActive = true
-        leadingAnchor.constraint(equalTo: leading).isActive = true
-        bottomAnchor.constraint(equalTo: bottom).isActive = true
-        trailingAnchor.constraint(equalTo: trailing).isActive = true
+        topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+        bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         
     }
 }

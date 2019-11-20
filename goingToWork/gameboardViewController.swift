@@ -18,7 +18,7 @@ class gameboardViewController: UIViewController {
         
       
         
-        
+       
         
         
         let rectangle1 = Space.init(ULCorner: CGPoint.init(x: 50, y: 50), LRCorner: CGPoint.init(x: 275, y: 150))
@@ -159,9 +159,30 @@ class gameboardViewController: UIViewController {
 
     }
     
+    /*
+ func computeScaleFactor(xScale: width, yScale: height) {
+        let x: width = 100
+        let y: height = 100
+        let xFactor: width
+        let yFactor: height
+        xFactor = x / xScale
+        yFactor = y / yScale 
+        
+    }
+    */
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        
+        /*let Space = UIView()
+        Space.backgroundColor = .white
+        
+        Space.addSubview(view)
+        
+        
+        Space.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor)
+        */
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(gameboardViewController.didTap(sender:)))
         self.view.addGestureRecognizer(tapGesture)
@@ -173,6 +194,10 @@ class gameboardViewController: UIViewController {
         initializeGameSpacesOnScreen(&mySpaces)
         
     }
+    
+    
+    
+    
     @objc func didTap(sender: UITapGestureRecognizer) {
         //let width: CGFloat = self.view.bounds.width // 1000.0
        // let height: CGFloat = self.view.bounds.height // 1000.0
@@ -190,6 +215,21 @@ class gameboardViewController: UIViewController {
         }
     }
     
+    
+    
   
 }
+
+/*extension UIView{
+    func anchor(top: NSLayoutYAxisAnchor,leading:NSLayoutXAxisAnchor, bottom: NSLayoutYAxisAnchor, trailing: NSLayoutXAxisAnchor){
+        
+        translatesAutoresizingMaskIntoConstraints = false
+        topAnchor.constraint(equalTo: top).isActive = true
+        leadingAnchor.constraint(equalTo: leading).isActive = true
+        bottomAnchor.constraint(equalTo: bottom).isActive = true
+        trailingAnchor.constraint(equalTo: trailing).isActive = true
+        
+    }
+}
+ */
 

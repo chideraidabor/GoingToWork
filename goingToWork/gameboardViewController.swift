@@ -16,12 +16,13 @@ class gameboardViewController: UIViewController {
     
     fileprivate func initializeGameSpacesOnScreen(_ mySpaces: inout [Space], boundingBox: CGRect) {
         
-        //let perfectBoundingBox = CGRect(x: 0, y: 0, width: <#T##CGFloat#>, height: <#T##CGFloat#>)
+        let perfectBoundingBox = CGRect(x: 0, y: 0, width: 1194, height: 834)
+        let xScaleFactor = (boundingBox.width - boundingBox.origin.x) / (perfectBoundingBox.width - perfectBoundingBox.origin.x)
         
-        let rectangle1 = Space.init(ULCorner: CGPoint.init(x: 50, y: 50), LRCorner: CGPoint.init(x: 275, y: 150))
+        let rectangle1 = Space.init(ULCorner: CGPoint.init(x: 50 * xScaleFactor, y: 50), LRCorner: CGPoint.init(x: 275, y: 150))
         self.view.layer.addSublayer(rectangle1.myShapeLayer)
         
-        let rectangle2 = Space.init(ULCorner: CGPoint.init(x: 75, y: 150), LRCorner: CGPoint.init(x: 175, y: 225))
+        let rectangle2 = Space.init(ULCorner: CGPoint.init(x: 75 , y: 150), LRCorner: CGPoint.init(x: 175, y: 225))
         self.view.layer.addSublayer(rectangle2.myShapeLayer)
         
         let rectangle3 = Space.init(ULCorner: CGPoint.init(x: 75, y: 225), LRCorner: CGPoint.init(x: 200, y: 325))

@@ -76,7 +76,7 @@
 		B89921B9235E468D00EDB8AF /* goingToWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = goingToWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B89921BD235E468D00EDB8AF /* goingToWorkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goingToWorkUITests.swift; sourceTree = "<group>"; };
 		B89921BF235E468D00EDB8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CA16A099237CA7F800BAF68D /* gameboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gameboardViewController.swift; sourceTree = "<group>"; };
+		CA16A099237CA7F800BAF68D /* gameboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gameboardViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		CA3C118E23736D59006D6F95 /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
 		E961BDEF2370C251006D383E /* GameInstructions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameInstructions.storyboard; sourceTree = "<group>"; };
 		E961BE2E2370D146006D383E /* GameInstructionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInstructionsVC.swift; sourceTree = "<group>"; };
@@ -151,6 +151,7 @@
 				50F591252368F15B00DCFC63 /* Storyboards */,
 				B899219A235E468C00EDB8AF /* AppDelegate.swift */,
 				CA16A099237CA7F800BAF68D /* gameboardViewController.swift */,
+				CA3C118E23736D59006D6F95 /* Space.swift */,
 				16CB46A5236783F2007A87C6 /* PlayerCharDetail.swift */,
 				ABCCC8D623662FFC002463E3 /* Board.swift */,
 				ABCCC8D823663012002463E3 /* PlayerPickerController.swift */,
@@ -160,7 +161,6 @@
 				676BC719237A055E004B39AE /* Player.swift */,
 				E961BE2E2370D146006D383E /* GameInstructionsVC.swift */,
 				B899219C235E468C00EDB8AF /* gameboardViewController.swift */,
-				CA3C118E23736D59006D6F95 /* Space.swift */,
 				B89921A4235E468D00EDB8AF /* Assets.xcassets */,
 				B89921A9235E468D00EDB8AF /* Info.plist */,
 				675431D1236643D60004EF25 /* 9A1E4006134A4F7E8031723821238143.png */,
@@ -327,7 +327,7 @@
 			files = (
 				B899219D235E468C00EDB8AF /* gameboardViewController.swift in Sources */,
 				676BC71A237A055E004B39AE /* Player.swift in Sources */,
-				B899219D235E468C00EDB8AF /* ViewController.swift in Sources */,
+				B899219D235E468C00EDB8AF /* gameboardViewController.swift in Sources */,
 				E9E3E7F22374E5A300D636F2 /* SpinAnimationVC.swift in Sources */,
 				ABCCC8DB23663025002463E3 /* Game.swift in Sources */,
 				B899219D235E468C00EDB8AF /* gameboardViewController.swift in Sources */,

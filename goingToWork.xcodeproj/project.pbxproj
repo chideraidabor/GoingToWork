@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		163F380C238B58BB00F7F48B /* SelectCharacter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 163F380B238B58BB00F7F48B /* SelectCharacter.storyboard */; };
 		16CB46A7236783F2007A87C6 /* PlayerCharDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CB46A5236783F2007A87C6 /* PlayerCharDetail.swift */; };
 		16CB46A8236783F2007A87C6 /* PlayerCharDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16CB46A6236783F2007A87C6 /* PlayerCharDetail.storyboard */; };
 		16CDE42723736F4500299EA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16CDE42523736F4500299EA6 /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		163F380B238B58BB00F7F48B /* SelectCharacter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectCharacter.storyboard; sourceTree = "<group>"; };
 		16CB46A5236783F2007A87C6 /* PlayerCharDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCharDetail.swift; sourceTree = "<group>"; };
 		16CB46A6236783F2007A87C6 /* PlayerCharDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlayerCharDetail.storyboard; sourceTree = "<group>"; };
 		16CDE42623736F4500299EA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = goingToWork/Storyboards/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				E961BDEF2370C251006D383E /* GameInstructions.storyboard */,
 				16CB46A6236783F2007A87C6 /* PlayerCharDetail.storyboard */,
 				E9701E982379FCDF00336EBF /* ArtistCredits.storyboard */,
+				163F380B238B58BB00F7F48B /* SelectCharacter.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				50F591272368F1EE00DCFC63 /* GameBoard.storyboard in Resources */,
 				16CB46A8236783F2007A87C6 /* PlayerCharDetail.storyboard in Resources */,
 				B89921A8235E468D00EDB8AF /* LaunchScreen.storyboard in Resources */,
+				163F380C238B58BB00F7F48B /* SelectCharacter.storyboard in Resources */,
 				16CDE42723736F4500299EA6 /* Main.storyboard in Resources */,
 				503EFE2B236F68AB000BD5B0 /* Vehicle.storyboard in Resources */,
 				B89921A5235E468D00EDB8AF /* Assets.xcassets in Resources */,
@@ -327,7 +331,7 @@
 			files = (
 				B899219D235E468C00EDB8AF /* gameboardViewController.swift in Sources */,
 				676BC71A237A055E004B39AE /* Player.swift in Sources */,
-				B899219D235E468C00EDB8AF /* ViewController.swift in Sources */,
+				B899219D235E468C00EDB8AF /* gameboardViewController.swift in Sources */,
 				E9E3E7F22374E5A300D636F2 /* SpinAnimationVC.swift in Sources */,
 				ABCCC8DB23663025002463E3 /* Game.swift in Sources */,
 				B899219D235E468C00EDB8AF /* gameboardViewController.swift in Sources */,

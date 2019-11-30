@@ -15,9 +15,9 @@ class PlayerCharDetailVC: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "", for: indexPath) as! ImageCollectionViewCell
-        cell.ImgImage.image=imageArray[indexPath.row]
-        return cell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCollectionViewCell", for: indexPath) as? ImageCollectionViewCell
+        cell?.ImgImage.image=imageArray[indexPath.row]
+        return cell!
     }
     
 

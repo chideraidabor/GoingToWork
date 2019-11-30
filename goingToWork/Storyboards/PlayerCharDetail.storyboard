@@ -66,10 +66,10 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rPu-wa-0yC">
-                                <rect key="frame" x="499" y="35" width="196" height="67"/>
+                                <rect key="frame" x="281" y="35" width="632" height="67"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0P-6p-ZGr">
-                                        <rect key="frame" x="0.0" y="0.0" width="196" height="67"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your character look" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0P-6p-ZGr">
+                                        <rect key="frame" x="0.0" y="0.0" width="632" height="67"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="56"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>

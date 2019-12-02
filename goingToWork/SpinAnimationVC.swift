@@ -10,7 +10,7 @@ import UIKit
 
 class SpinAnimationVC: gameboardViewController, UIGestureRecognizerDelegate {
    
-    @IBOutlet weak var GameSpinner: UIImageView!
+    @IBOutlet weak var FinalSpinner: UIImageView!
     @IBOutlet weak var syncContainer: UIStackView!
     
 //    let tapSyncMethod = "handleSyncTap:"
@@ -30,11 +30,11 @@ class SpinAnimationVC: gameboardViewController, UIGestureRecognizerDelegate {
     }
 
     func startSpinning() {
-        GameSpinner.startRotating()
+        FinalSpinner.startRotating()
     }
     
     func stopSpinning() {
-        GameSpinner.stopRotating()
+        FinalSpinner.stopRotating()
     }
     
     @objc func handleSyncTap(sender: UITapGestureRecognizer? = nil) {

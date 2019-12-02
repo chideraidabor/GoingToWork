@@ -11,7 +11,7 @@
         <!--Spin AnimationVC-->
         <scene sceneID="j1S-oh-3xN">
             <objects>
-                <viewController storyboardIdentifier="Play" id="5Ap-OB-kCv" customClass="SpinAnimationVC" customModule="goingToWork" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Play" modalPresentationStyle="fullScreen" id="5Ap-OB-kCv" customClass="SpinAnimationVC" customModule="goingToWork" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kJ3-nh-0LB">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

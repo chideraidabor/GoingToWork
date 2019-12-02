@@ -28,7 +28,7 @@ class Space : UIBezierPath {
         close()
         
         myShapeLayer.path = self.cgPath
-        myShapeLayer.fillColor = UIColor.blue.cgColor
+        myShapeLayer.fillColor = UIColor.clear.cgColor
     }
     
     

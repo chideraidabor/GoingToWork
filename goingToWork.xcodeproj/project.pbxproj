@@ -32,6 +32,9 @@
 		E961BE2F2370D146006D383E /* GameInstructionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E961BE2E2370D146006D383E /* GameInstructionsVC.swift */; };
 		E9701E992379FCDF00336EBF /* ArtistCredits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9701E982379FCDF00336EBF /* ArtistCredits.storyboard */; };
 		E98A47BF2375F4AF003DEC8E /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A47BE2375F4AF003DEC8E /* Vehicle.swift */; };
+		E9C605BD23957F3200B208D0 /* UIView+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C605BC23957F3200B208D0 /* UIView+Rotation.swift */; };
+		E9C605BE23957F3200B208D0 /* UIView+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C605BC23957F3200B208D0 /* UIView+Rotation.swift */; };
+		E9C605BF23957F3200B208D0 /* UIView+Rotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C605BC23957F3200B208D0 /* UIView+Rotation.swift */; };
 		E9E3E7F22374E5A300D636F2 /* SpinAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E3E7F12374E5A300D636F2 /* SpinAnimationVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +87,7 @@
 		E961BE2E2370D146006D383E /* GameInstructionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInstructionsVC.swift; sourceTree = "<group>"; };
 		E9701E982379FCDF00336EBF /* ArtistCredits.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArtistCredits.storyboard; sourceTree = "<group>"; };
 		E98A47BE2375F4AF003DEC8E /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		E9C605BC23957F3200B208D0 /* UIView+Rotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Rotation.swift"; sourceTree = "<group>"; };
 		E9E3E7F12374E5A300D636F2 /* SpinAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinAnimationVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,6 +164,7 @@
 				ABCCC8DA23663025002463E3 /* Game.swift */,
 				E98A47BE2375F4AF003DEC8E /* Vehicle.swift */,
 				E9E3E7F12374E5A300D636F2 /* SpinAnimationVC.swift */,
+				E9C605BC23957F3200B208D0 /* UIView+Rotation.swift */,
 				676BC719237A055E004B39AE /* Player.swift */,
 				E961BE2E2370D146006D383E /* GameInstructionsVC.swift */,
 				B899219C235E468C00EDB8AF /* gameboardViewController.swift */,
@@ -333,6 +338,7 @@
 				676BC71A237A055E004B39AE /* Player.swift in Sources */,
 				B899219D235E468C00EDB8AF /* gameboardViewController.swift in Sources */,
 				E9E3E7F22374E5A300D636F2 /* SpinAnimationVC.swift in Sources */,
+				E9C605BD23957F3200B208D0 /* UIView+Rotation.swift in Sources */,
 				ABCCC8DB23663025002463E3 /* Game.swift in Sources */,
 				B899219D235E468C00EDB8AF /* gameboardViewController.swift in Sources */,
 				B899219B235E468C00EDB8AF /* AppDelegate.swift in Sources */,
@@ -351,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9C605BE23957F3200B208D0 /* UIView+Rotation.swift in Sources */,
 				B89921B3235E468D00EDB8AF /* goingToWorkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9C605BF23957F3200B208D0 /* UIView+Rotation.swift in Sources */,
 				B89921BE235E468D00EDB8AF /* goingToWorkUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

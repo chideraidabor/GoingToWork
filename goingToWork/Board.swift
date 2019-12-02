@@ -6,4 +6,18 @@
 //  Copyright © 2019 Gannon University. All rights reserved.
 //
 
+import UIKit
+
 import Foundation
+
+class Board: NSObject {
+    
+    
+    
+    
+}
+
+
+
+
+

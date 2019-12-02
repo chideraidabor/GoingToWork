@@ -15,9 +15,8 @@ class PlayerPickerController: UIViewController{
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var PlayerPicker: UIPickerView!
     private let dataSource = ["2", "3","4"]
-    
-    
-    
+    private let myGame = Game()
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,10 +45,13 @@ extension PlayerPickerController: UIPickerViewDelegate, UIPickerViewDataSource{
         label.text = dataSource[row]
     }
     
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> Int64? {
+        myGame.numberOfPlayers = dataSource[row]
         return dataSource[row]
+        //CHANGE TO INT
     }
     
+ 
     
 }
 

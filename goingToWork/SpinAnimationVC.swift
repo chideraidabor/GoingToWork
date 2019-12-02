@@ -40,7 +40,7 @@ class SpinAnimationVC: gameboardViewController, UIGestureRecognizerDelegate {
     @objc func handleSyncTap(sender: UITapGestureRecognizer? = nil) {
         startSpinning()
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(5)) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4)) {
             self.stopSpinning()
         }
         

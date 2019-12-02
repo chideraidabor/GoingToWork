@@ -1,9 +1,9 @@
 //
 //  UIView+Rotation.swift
-//  SpinningImageView-Example
+//  goingToWork
 //
-//  Created by Ben Bahrenburg on 7/25/15.
-//  Copyright © 2015 Bencoding. All rights reserved.
+//  Created by Jeremiah Brennin on 12/1/19.
+//  Copyright © 2019 Gannon University. All rights reserved.
 //
 
 import Foundation

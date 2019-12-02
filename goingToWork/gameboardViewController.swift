@@ -22,105 +22,111 @@ class gameboardViewController: UIViewController {
         
         let yScaleFactor = (boundingBox.width - boundingBox.origin.y) / (perfectBoundingBox.width - perfectBoundingBox.origin.y)
         
-        
-        let rectangle1 = Space.init(ULCorner: CGPoint.init(x: 50 * xScaleFactor, y: 50 * yScaleFactor), LRCorner: CGPoint.init(x: 375 * xScaleFactor, y: 150 * yScaleFactor))
+        // finish triangle
+        let rectangle1 = Space.init(ULCorner: CGPoint.init(x: 50 * xScaleFactor, y: 50 * yScaleFactor), LRCorner: CGPoint.init(x: 385 * xScaleFactor, y: 150 * yScaleFactor))
         self.view.layer.addSublayer(rectangle1.myShapeLayer)
         
-        let rectangle2 = Space.init(ULCorner: CGPoint.init(x: 75 * xScaleFactor, y: 150 * yScaleFactor), LRCorner: CGPoint.init(x: 175 * xScaleFactor , y: 225 * yScaleFactor))
+        let rectangle2 = Space.init(ULCorner: CGPoint.init(x: 100 * xScaleFactor, y: 150 * yScaleFactor), LRCorner: CGPoint.init(x: 225 * xScaleFactor , y: 225 * yScaleFactor))
         self.view.layer.addSublayer(rectangle2.myShapeLayer)
         
-        let rectangle3 = Space.init(ULCorner: CGPoint.init(x: 75 * xScaleFactor,  y: 225 * yScaleFactor), LRCorner: CGPoint.init(x: 200 * xScaleFactor, y: 325 * yScaleFactor))
+        // Upper horizontal rectangles
+        
+        let rectangle3 = Space.init(ULCorner: CGPoint.init(x: 100 * xScaleFactor,  y: 225 * yScaleFactor), LRCorner: CGPoint.init(x: 225 * xScaleFactor, y: 325 * yScaleFactor))
         self.view.layer.addSublayer(rectangle3.myShapeLayer)
         
-        let rectangle4 = Space.init(ULCorner: CGPoint.init(x: 200 * xScaleFactor, y: 225 * yScaleFactor), LRCorner: CGPoint.init(x: 325 * xScaleFactor, y: 325 * yScaleFactor))
+        let rectangle4 = Space.init(ULCorner: CGPoint.init(x: 225 * xScaleFactor, y: 230 * yScaleFactor), LRCorner: CGPoint.init(x: 350 * xScaleFactor, y: 325 * yScaleFactor))
         self.view.layer.addSublayer(rectangle4.myShapeLayer)
         
-        let rectangle5 = Space.init(ULCorner: CGPoint.init(x: 325 * xScaleFactor, y: 225 * yScaleFactor), LRCorner: CGPoint.init(x: 450 * xScaleFactor, y: 325 * yScaleFactor))
+        let rectangle5 = Space.init(ULCorner: CGPoint.init(x: 350 * xScaleFactor, y: 230 * yScaleFactor), LRCorner: CGPoint.init(x: 475 * xScaleFactor, y: 325 * yScaleFactor))
         self.view.layer.addSublayer(rectangle5.myShapeLayer)
         
-        let rectangle6 = Space.init(ULCorner: CGPoint.init(x: 450 * xScaleFactor, y: 225 * yScaleFactor), LRCorner: CGPoint.init(x: 575 * xScaleFactor, y: 325 * yScaleFactor))
+        let rectangle6 = Space.init(ULCorner: CGPoint.init(x: 475 * xScaleFactor, y: 230 * yScaleFactor), LRCorner: CGPoint.init(x: 615 * xScaleFactor, y: 325 * yScaleFactor))
         self.view.layer.addSublayer(rectangle6.myShapeLayer)
         
-        let rectangle7 = Space.init(ULCorner: CGPoint.init(x: 575 * xScaleFactor, y: 225 * yScaleFactor), LRCorner: CGPoint.init(x: 700 * xScaleFactor, y: 325 * yScaleFactor))
+        let rectangle7 = Space.init(ULCorner: CGPoint.init(x: 615 * xScaleFactor, y: 230 * yScaleFactor), LRCorner: CGPoint.init(x: 755 * xScaleFactor, y: 325 * yScaleFactor))
         self.view.layer.addSublayer(rectangle7.myShapeLayer)
                
-        let rectangle8 = Space.init(ULCorner: CGPoint.init(x: 700 * xScaleFactor, y: 225 * yScaleFactor), LRCorner: CGPoint.init(x: 825 * xScaleFactor, y: 325 * yScaleFactor))
+        let rectangle8 = Space.init(ULCorner: CGPoint.init(x: 755 * xScaleFactor, y: 230 * yScaleFactor), LRCorner: CGPoint.init(x: 895 * xScaleFactor, y: 325 * yScaleFactor))
         self.view.layer.addSublayer(rectangle8.myShapeLayer)
         
-        let rectangle9 = Space.init(ULCorner: CGPoint.init(x: 825 * xScaleFactor, y: 225 * yScaleFactor), LRCorner: CGPoint.init(x: 950 * xScaleFactor, y: 325 * yScaleFactor))
+        let rectangle9 = Space.init(ULCorner: CGPoint.init(x: 895 * xScaleFactor, y: 230 * yScaleFactor), LRCorner: CGPoint.init(x: 1000 * xScaleFactor, y: 325 * yScaleFactor))
         self.view.layer.addSublayer(rectangle9.myShapeLayer)
         
-        let rectangle10 = Space.init(ULCorner: CGPoint.init(x: 950 * xScaleFactor, y: 225 * yScaleFactor), LRCorner: CGPoint.init(x: 1075 * xScaleFactor, y: 325 * yScaleFactor))
+        let rectangle10 = Space.init(ULCorner: CGPoint.init(x: 1000 * xScaleFactor, y: 230 * yScaleFactor), LRCorner: CGPoint.init(x: 1125 * xScaleFactor, y: 330 * yScaleFactor))
         self.view.layer.addSublayer(rectangle10.myShapeLayer)
         
-        let rectangle11 = Space.init(ULCorner: CGPoint.init(x: 975 * xScaleFactor, y: 325 * yScaleFactor), LRCorner: CGPoint.init(x: 1075 * xScaleFactor, y: 425 * yScaleFactor))
+        //upper vertical rectangles(right side of screen)
+        
+        let rectangle11 = Space.init(ULCorner: CGPoint.init(x: 1000 * xScaleFactor, y: 330 * yScaleFactor), LRCorner: CGPoint.init(x: 1125 * xScaleFactor, y: 430 * yScaleFactor))
         self.view.layer.addSublayer(rectangle11.myShapeLayer)
         
-        let rectangle12 = Space.init(ULCorner: CGPoint.init(x: 975 * xScaleFactor, y: 425 * yScaleFactor), LRCorner: CGPoint.init(x: 1075 * xScaleFactor, y: 525 * yScaleFactor))
+        let rectangle12 = Space.init(ULCorner: CGPoint.init(x: 1000 * xScaleFactor, y: 430 * yScaleFactor), LRCorner: CGPoint.init(x: 1125 * xScaleFactor, y: 550 * yScaleFactor))
         self.view.layer.addSublayer(rectangle12.myShapeLayer)
         
         
-        let rectangle13 = Space.init(ULCorner: CGPoint.init(x: 975 * xScaleFactor, y: 425 * yScaleFactor), LRCorner: CGPoint.init(x: 850 * xScaleFactor, y: 525 * yScaleFactor))
+        //middle horizontal rectangles
+        
+        let rectangle13 = Space.init(ULCorner: CGPoint.init(x: 1000 * xScaleFactor, y: 460 * yScaleFactor), LRCorner: CGPoint.init(x: 900 * xScaleFactor, y: 550 * yScaleFactor))
         self.view.layer.addSublayer(rectangle13.myShapeLayer)
         
-        let rectangle14 = Space.init(ULCorner: CGPoint.init(x: 850 * xScaleFactor, y: 425 * yScaleFactor), LRCorner: CGPoint.init(x: 725 * xScaleFactor, y: 525 * yScaleFactor))
+        let rectangle14 = Space.init(ULCorner: CGPoint.init(x: 900 * xScaleFactor, y: 460 * yScaleFactor), LRCorner: CGPoint.init(x: 775 * xScaleFactor, y: 550 * yScaleFactor))
         self.view.layer.addSublayer(rectangle14.myShapeLayer)
         
-        let rectangle15 = Space.init(ULCorner: CGPoint.init(x: 725 * xScaleFactor, y: 425 * yScaleFactor), LRCorner: CGPoint.init(x: 600 * xScaleFactor, y: 525 * yScaleFactor))
+        let rectangle15 = Space.init(ULCorner: CGPoint.init(x: 775 * xScaleFactor, y: 460 * yScaleFactor), LRCorner: CGPoint.init(x: 645 * xScaleFactor, y: 550 * yScaleFactor))
         self.view.layer.addSublayer(rectangle15.myShapeLayer)
         
-        let rectangle16 = Space.init(ULCorner: CGPoint.init(x: 600 * xScaleFactor, y: 425 * yScaleFactor), LRCorner: CGPoint.init(x: 475 * xScaleFactor, y: 525 * yScaleFactor))
+        let rectangle16 = Space.init(ULCorner: CGPoint.init(x: 645 * xScaleFactor, y: 460 * yScaleFactor), LRCorner: CGPoint.init(x: 505 * xScaleFactor, y: 550 * yScaleFactor))
         self.view.layer.addSublayer(rectangle16.myShapeLayer)
         
-        let rectangle17 = Space.init(ULCorner: CGPoint.init(x: 475 * xScaleFactor, y: 425 * yScaleFactor), LRCorner: CGPoint.init(x: 350 * xScaleFactor, y: 525 * yScaleFactor))
+        let rectangle17 = Space.init(ULCorner: CGPoint.init(x: 505 * xScaleFactor, y: 460 * yScaleFactor), LRCorner: CGPoint.init(x: 380 * xScaleFactor, y: 550 * yScaleFactor))
         self.view.layer.addSublayer(rectangle17.myShapeLayer)
         
-        let rectangle18 = Space.init(ULCorner: CGPoint.init(x: 350 * xScaleFactor, y: 425 * yScaleFactor), LRCorner: CGPoint.init(x: 225 * xScaleFactor, y: 525 * yScaleFactor))
+        let rectangle18 = Space.init(ULCorner: CGPoint.init(x: 380 * xScaleFactor, y: 460 * yScaleFactor), LRCorner: CGPoint.init(x: 245 * xScaleFactor, y: 550 * yScaleFactor))
         self.view.layer.addSublayer(rectangle18.myShapeLayer)
         
-        let rectangle19 = Space.init(ULCorner: CGPoint.init(x: 225 * xScaleFactor, y: 425 * yScaleFactor), LRCorner: CGPoint.init(x: 125 * xScaleFactor, y: 525 * yScaleFactor))
+        let rectangle19 = Space.init(ULCorner: CGPoint.init(x: 245 * xScaleFactor, y: 460 * yScaleFactor), LRCorner: CGPoint.init(x: 150 * xScaleFactor, y: 580 * yScaleFactor))
         self.view.layer.addSublayer(rectangle19.myShapeLayer)
+    
         
+        // lower vertical column
         
-        let rectangle20 = Space.init(ULCorner: CGPoint.init(x: 125 * xScaleFactor, y: 525 * yScaleFactor), LRCorner: CGPoint.init(x: 50 * xScaleFactor, y: 425 * yScaleFactor))
+        let rectangle20 = Space.init(ULCorner: CGPoint.init(x: 65 * xScaleFactor, y: 460 * yScaleFactor), LRCorner: CGPoint.init(x: 150 * xScaleFactor, y: 580 * yScaleFactor))
         self.view.layer.addSublayer(rectangle20.myShapeLayer)
         
-        let rectangle21 = Space.init(ULCorner: CGPoint.init(x: 50 * xScaleFactor, y: 525 * yScaleFactor), LRCorner: CGPoint.init(x: 150 * xScaleFactor, y: 625 * yScaleFactor))
+               
+        let rectangle21 = Space.init(ULCorner: CGPoint.init(x: 65 * xScaleFactor, y: 580 * yScaleFactor), LRCorner: CGPoint.init(x: 190 * xScaleFactor, y: 670 * yScaleFactor))
         self.view.layer.addSublayer(rectangle21.myShapeLayer)
         
-               
-        let rectangle22 = Space.init(ULCorner: CGPoint.init(x: 50 * xScaleFactor, y: 625 * yScaleFactor), LRCorner: CGPoint.init(x: 150 * xScaleFactor, y: 700 * yScaleFactor))
+        let rectangle22 = Space.init(ULCorner: CGPoint.init(x: 65 * xScaleFactor, y: 670 * yScaleFactor), LRCorner: CGPoint.init(x: 190 * xScaleFactor, y: 770 * yScaleFactor))
         self.view.layer.addSublayer(rectangle22.myShapeLayer)
         
-        let rectangle23 = Space.init(ULCorner: CGPoint.init(x: 50 * xScaleFactor, y: 700 * yScaleFactor), LRCorner: CGPoint.init(x: 150 * xScaleFactor, y: 775 * yScaleFactor))
+        
+        // lower horizontal row
+       
+        let rectangle23 = Space.init(ULCorner: CGPoint.init(x: 65 * xScaleFactor, y: 770 * yScaleFactor), LRCorner: CGPoint.init(x: 190 * xScaleFactor, y: 870 * yScaleFactor))
         self.view.layer.addSublayer(rectangle23.myShapeLayer)
-        
-        let rectangle24 = Space.init(ULCorner: CGPoint.init(x: 150 * xScaleFactor, y: 775 * yScaleFactor), LRCorner: CGPoint.init(x: 250 * xScaleFactor, y: 675 * yScaleFactor))
+               
+        let rectangle24 = Space.init(ULCorner: CGPoint.init(x: 190 * xScaleFactor, y: 770 * yScaleFactor), LRCorner: CGPoint.init(x: 315 * xScaleFactor, y: 870 * yScaleFactor))
         self.view.layer.addSublayer(rectangle24.myShapeLayer)
-        
-        let rectangle25 = Space.init(ULCorner: CGPoint.init(x: 250 * xScaleFactor, y: 775 * yScaleFactor), LRCorner: CGPoint.init(x: 350 * xScaleFactor, y: 675 * yScaleFactor))
+            
+        let rectangle25 = Space.init(ULCorner: CGPoint.init(x: 315 * xScaleFactor, y: 770 * yScaleFactor), LRCorner: CGPoint.init(x: 455 * xScaleFactor, y: 870 * yScaleFactor))
         self.view.layer.addSublayer(rectangle25.myShapeLayer)
                
-        let rectangle26 = Space.init(ULCorner: CGPoint.init(x: 350 * xScaleFactor, y: 775 * yScaleFactor), LRCorner: CGPoint.init(x: 450 * xScaleFactor, y: 675 * yScaleFactor))
+        let rectangle26 = Space.init(ULCorner: CGPoint.init(x: 455 * xScaleFactor, y: 770 * yScaleFactor), LRCorner: CGPoint.init(x: 590 * xScaleFactor, y: 870 * yScaleFactor))
         self.view.layer.addSublayer(rectangle26.myShapeLayer)
-            
-        let rectangle27 = Space.init(ULCorner: CGPoint.init(x: 450 * xScaleFactor, y: 775 * yScaleFactor), LRCorner: CGPoint.init(x: 550 * xScaleFactor, y: 675 * yScaleFactor))
+               
+        let rectangle27 = Space.init(ULCorner: CGPoint.init(x: 590 * xScaleFactor, y: 770 * yScaleFactor), LRCorner: CGPoint.init(x: 725 * xScaleFactor, y: 870 * yScaleFactor))
         self.view.layer.addSublayer(rectangle27.myShapeLayer)
                
-        let rectangle28 = Space.init(ULCorner: CGPoint.init(x: 550 * xScaleFactor, y: 775 * yScaleFactor), LRCorner: CGPoint.init(x: 650 * xScaleFactor, y: 675 * yScaleFactor))
+        let rectangle28 = Space.init(ULCorner: CGPoint.init(x: 725 * xScaleFactor, y: 770 * yScaleFactor), LRCorner: CGPoint.init(x: 850 * xScaleFactor, y: 870 * yScaleFactor))
         self.view.layer.addSublayer(rectangle28.myShapeLayer)
                
-        let rectangle29 = Space.init(ULCorner: CGPoint.init(x: 650 * xScaleFactor, y: 775 * yScaleFactor), LRCorner: CGPoint.init(x: 750 * xScaleFactor, y: 675 * yScaleFactor))
+        let rectangle29 = Space.init(ULCorner: CGPoint.init(x: 850 * xScaleFactor, y: 770 * yScaleFactor), LRCorner: CGPoint.init(x: 975 * xScaleFactor, y: 870 * yScaleFactor))
         self.view.layer.addSublayer(rectangle29.myShapeLayer)
-               
-        let rectangle30 = Space.init(ULCorner: CGPoint.init(x: 750 * xScaleFactor, y: 775 * yScaleFactor), LRCorner: CGPoint.init(x: 850 * xScaleFactor, y: 675 * yScaleFactor))
+        
+        // start rectangle
+        let rectangle30 = Space.init(ULCorner: CGPoint.init(x: 975 * xScaleFactor, y: 870 * yScaleFactor), LRCorner: CGPoint.init(x: 1100 * xScaleFactor, y: 700 * yScaleFactor))
         self.view.layer.addSublayer(rectangle30.myShapeLayer)
-               
-        let rectangle31 = Space.init(ULCorner: CGPoint.init(x: 850 * xScaleFactor, y: 775 * yScaleFactor), LRCorner: CGPoint.init(x: 950 * xScaleFactor, y: 675 * yScaleFactor))
-        self.view.layer.addSublayer(rectangle31.myShapeLayer)
-               
-        let rectangle32 = Space.init(ULCorner: CGPoint.init(x: 950 * xScaleFactor, y: 775 * yScaleFactor), LRCorner: CGPoint.init(x: 1075 * xScaleFactor, y: 625 * yScaleFactor))
-        self.view.layer.addSublayer(rectangle32.myShapeLayer)
         
         
         
@@ -155,8 +161,6 @@ class gameboardViewController: UIViewController {
         mySpaces.append(rectangle28)
         mySpaces.append(rectangle29)
         mySpaces.append(rectangle30)
-        mySpaces.append(rectangle31)
-        mySpaces.append(rectangle32)
         
        
 

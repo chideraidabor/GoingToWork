@@ -8,22 +8,42 @@
 
 import UIKit
 
-class SpinAnimationVC: gameboardViewController {
+class SpinAnimationVC: gameboardViewController, UIGestureRecognizerDelegate {
+   
+    @IBOutlet weak var FinalSpinner: UIImageView!
+    @IBOutlet weak var syncContainer: UIStackView!
     
-    @IBOutlet weak var Spinner: UIImageView!
+//    let tapSyncMethod = "handleSyncTap:"
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        let syncTapView = UITapGestureRecognizer(target: self, action: #selector(handleSyncTap(sender:)))
+        syncTapView.delegate = self
         
-        
-        // Do any additional setup after loading the view.
+        syncContainer.addGestureRecognizer(syncTapView)
+
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+
+    func startSpinning() {
+        FinalSpinner.startRotating()
     }
     
-
-    @IBAction func SpinButton(_ sender: Any) {
-        UIView.animate(withDuration: 4.0, animations: ({
-            self.Spinner.transform = CGAffineTransform(rotationAngle: 360)
-        }))
+    func stopSpinning() {
+        FinalSpinner.stopRotating()
     }
-}
+    
+    @objc func handleSyncTap(sender: UITapGestureRecognizer? = nil) {
+        startSpinning()
 
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4)) {
+            self.stopSpinning()
+        }
+        
+    }
+
+}

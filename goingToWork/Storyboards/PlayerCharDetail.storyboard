@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,59 +24,64 @@
                         <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="wIo-oX-GLE">
-                                <rect key="frame" x="67" y="163" width="1060" height="393"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="wIo-oX-GLE">
+                                <rect key="frame" x="67" y="225" width="1060" height="269"/>
                                 <subviews>
-                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="T2y-ca-2pS">
-                                        <rect key="frame" x="0.0" y="0.0" width="1060" height="393"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Gds-ug-Gin">
-                                            <size key="itemSize" width="50" height="50"/>
-                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        </collectionViewFlowLayout>
-                                        <cells>
-                                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCollectionViewCell" id="2gK-wy-tfS" customClass="ImageCollectionViewCell" customModule="goingToWork" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="1" width="334" height="391"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <collectionViewCellContentView key="contentView" opaque="NO" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="aH2-fB-Y8n">
-                                                    <rect key="frame" x="0.0" y="0.0" width="334" height="391"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <subviews>
-                                                        <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eqq-T7-XiL">
-                                                            <rect key="frame" x="0.0" y="8" width="332" height="375"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        </imageView>
-                                                    </subviews>
-                                                </collectionViewCellContentView>
-                                                <size key="customSize" width="334" height="391"/>
-                                                <connections>
-                                                    <outlet property="ImgImage" destination="eqq-T7-XiL" id="obr-Lc-58v"/>
-                                                </connections>
-                                            </collectionViewCell>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="un8-ib-OfP">
-                                                <rect key="frame" x="344" y="171.5" width="50" height="50"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QIr-Dh-dmT">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </collectionViewCellContentView>
-                                            </collectionViewCell>
-                                        </cells>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sD-G8-WjU">
+                                        <rect key="frame" x="0.0" y="0.0" width="169" height="269"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button" image="male_generic1"/>
                                         <connections>
-                                            <outlet property="dataSource" destination="61c-Is-6tQ" id="3Lm-3v-Tb6"/>
-                                            <outlet property="delegate" destination="61c-Is-6tQ" id="blo-ez-RPY"/>
+                                            <action selector="selectMale1:" destination="61c-Is-6tQ" eventType="touchUpInside" id="17a-he-6aX"/>
                                         </connections>
-                                    </collectionView>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R37-Ys-UD0">
+                                        <rect key="frame" x="178" y="0.0" width="169.5" height="269"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button" image="male_generic2"/>
+                                        <connections>
+                                            <action selector="selectMale2:" destination="61c-Is-6tQ" eventType="touchUpInside" id="NeX-Uf-qnq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnY-rX-mNK">
+                                        <rect key="frame" x="356.5" y="0.0" width="169" height="269"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button" image="male_generic3"/>
+                                        <connections>
+                                            <action selector="selectMale3:" destination="61c-Is-6tQ" eventType="touchUpInside" id="fwo-Ll-RzP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pA-dJ-egX">
+                                        <rect key="frame" x="534.5" y="0.0" width="169" height="269"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button" image="female_generic1"/>
+                                        <connections>
+                                            <action selector="selectFemale1:" destination="61c-Is-6tQ" eventType="touchUpInside" id="mhY-GI-T1k"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="td5-Fb-i6Z">
+                                        <rect key="frame" x="712.5" y="0.0" width="169.5" height="269"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button" image="female_generic2"/>
+                                        <connections>
+                                            <action selector="selectFemale2:" destination="61c-Is-6tQ" eventType="touchUpInside" id="KM4-Fl-cRP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeA-KV-Wu4">
+                                        <rect key="frame" x="891" y="0.0" width="169" height="269"/>
+                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button" image="female_generic3"/>
+                                        <connections>
+                                            <action selector="selectFemale3:" destination="61c-Is-6tQ" eventType="touchUpInside" id="tcc-Q3-JFj"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rPu-wa-0yC">
-                                <rect key="frame" x="281" y="35" width="632" height="67"/>
+                                <rect key="frame" x="281" y="35" width="632" height="0.0"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your character look" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0P-6p-ZGr">
-                                        <rect key="frame" x="0.0" y="0.0" width="632" height="67"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="632" height="0.0"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="56"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -104,7 +108,7 @@
                             <constraint firstItem="wIo-oX-GLE" firstAttribute="leading" secondItem="DbG-bP-YpR" secondAttribute="leading" constant="67" id="EZB-2p-F9G"/>
                             <constraint firstItem="wIo-oX-GLE" firstAttribute="centerX" secondItem="DbG-bP-YpR" secondAttribute="centerX" id="HxW-E6-hHk"/>
                             <constraint firstItem="DbG-bP-YpR" firstAttribute="trailing" secondItem="wIo-oX-GLE" secondAttribute="trailing" constant="67" id="Lkq-S3-2RQ"/>
-                            <constraint firstItem="wIo-oX-GLE" firstAttribute="top" secondItem="rPu-wa-0yC" secondAttribute="bottom" constant="61" id="QAf-Cd-xqo"/>
+                            <constraint firstItem="wIo-oX-GLE" firstAttribute="top" secondItem="rPu-wa-0yC" secondAttribute="bottom" constant="190" id="QAf-Cd-xqo"/>
                             <constraint firstItem="wIo-oX-GLE" firstAttribute="centerY" secondItem="DbG-bP-YpR" secondAttribute="centerY" constant="-47.5" id="Rxm-mQ-TCX"/>
                             <constraint firstItem="DbG-bP-YpR" firstAttribute="bottom" secondItem="NBm-5g-Haa" secondAttribute="bottom" constant="108" id="YYa-gg-BOa"/>
                             <constraint firstItem="rPu-wa-0yC" firstAttribute="top" secondItem="DbG-bP-YpR" secondAttribute="top" constant="35" id="eaW-1D-oEo"/>
@@ -112,6 +116,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DbG-bP-YpR"/>
                     </view>
+                    <connections>
+                        <outlet property="Confirm" destination="duC-hR-gGt" id="1ff-XG-IxM"/>
+                        <outlet property="female1Selected" destination="4pA-dJ-egX" id="1zr-3B-bjf"/>
+                        <outlet property="female2Selected" destination="td5-Fb-i6Z" id="gXO-vH-3Pw"/>
+                        <outlet property="female3Selected" destination="XeA-KV-Wu4" id="Vob-kU-gfk"/>
+                        <outlet property="male1Selected" destination="6sD-G8-WjU" id="CbA-LZ-Yej"/>
+                        <outlet property="male2Selected" destination="R37-Ys-UD0" id="gkD-fI-NYv"/>
+                        <outlet property="male3Selected" destination="EnY-rX-mNK" id="1uE-lx-0ET"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6bV-Gf-Ae0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -129,6 +142,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="female_generic1" width="3600" height="3600"/>
+        <image name="female_generic2" width="3600" height="3600"/>
+        <image name="female_generic3" width="3600" height="3600"/>
+        <image name="male_generic1" width="3600" height="3600"/>
         <image name="male_generic2" width="3600" height="3600"/>
+        <image name="male_generic3" width="3600" height="3600"/>
     </resources>
 </document>

@@ -50,6 +50,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tb-4O-fCT">
                                         <rect key="frame" x="0.0" y="0.0" width="310" height="78"/>
+                                        <color key="backgroundColor" red="0.64778268337249756" green="0.44244372844696045" blue="0.32842159271240234" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="55"/>
                                         <state key="normal" title="Looks good!">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -92,7 +93,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.80117732289999999" green="0.99228197340000002" blue="0.31542426350000002" alpha="0.91000000000000003" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.74374872446060181" green="0.36271297931671143" blue="0.13681253790855408" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="PT8-dj-86z" firstAttribute="top" secondItem="r4w-eB-Cbr" secondAttribute="top" constant="115" id="Q0t-bG-xzd"/>
                             <constraint firstItem="PT8-dj-86z" firstAttribute="centerX" secondItem="r4w-eB-Cbr" secondAttribute="centerX" id="ZWR-cc-3qs"/>

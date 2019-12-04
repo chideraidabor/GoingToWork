@@ -9,130 +9,158 @@
 import UIKit
 
 class PlayerCharDetailVC: UIViewController, UICollectionViewDelegate {
-    var chartype: Int = 1;
-
+    var chartype: Int = 0;
+    var  noOfPlayer = 0
     var playerSelectorVC: PlayerPickerController?
+    
 
-    @IBOutlet weak var male1Selected: UIButton!
+    @IBOutlet weak var char1: UIButton!
     
-    @IBOutlet weak var male2Selected: UIButton!
+    @IBOutlet weak var char2: UIButton!
     
-    @IBOutlet weak var male3Selected: UIButton!
+    @IBOutlet weak var char3: UIButton!
     
-    @IBOutlet weak var female1Selected: UIButton!
+    @IBOutlet weak var char4: UIButton!
     
-    @IBOutlet weak var female2Selected: UIButton!
+    @IBOutlet weak var char5: UIButton!
     
-    @IBOutlet weak var female3Selected: UIButton!
+    @IBOutlet weak var char6: UIButton!
     
     @IBOutlet weak var Confirm: UIButton!
-    
+
+    @IBOutlet weak var charSelected: UILabel!
     override func viewDidLoad(){
         super.viewDidLoad()
-        male1Selected.isSelected=true
-        male1Selected.isUserInteractionEnabled = true
-         male2Selected.isUserInteractionEnabled = true
-         male3Selected.isUserInteractionEnabled = true
-         female1Selected.isUserInteractionEnabled = true
-         female2Selected.isUserInteractionEnabled = true
-         female3Selected.isUserInteractionEnabled = true
+       
+        
+        char1.isUserInteractionEnabled = true
+         char2.isUserInteractionEnabled = true
+         char3.isUserInteractionEnabled = true
+         char4.isUserInteractionEnabled = true
+         char5.isUserInteractionEnabled = true
+         char6.isUserInteractionEnabled = true
         
         
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
-    @IBAction func selectMale1(_ sender: UIButton) {
-        //sender.isHighlighted=true
-              if !(sender.isSelected){
-                sender.isSelected=true
-                sender.backgroundColor=UIColor.red
-                chartype = 1;
-
-            }
-            else {
-                sender.isSelected=false
-                sender.backgroundColor=UIColor.white
-            }
-
-        
+    fileprivate func selectCharButton(_ sender: UIButton) {
+        sender.isSelected=true
+        sender.backgroundColor=UIColor.red
     }
-    @IBAction func selectMale2(_ sender: UIButton) {
-        //sender.isHighlighted=true
-               if !(sender.isSelected){
-                sender.isSelected=true
-                sender.backgroundColor=UIColor.red
-                chartype = 2;
-
-            }
-            else {
-                sender.isSelected=false
-                sender.backgroundColor=UIColor.white
-            }
-
-        
+    fileprivate func deselectCharButton(_ sender: UIButton) {
+        sender.isSelected=false
+        sender.backgroundColor=UIColor.white
     }
-    @IBAction func selectMale3(_ sender: UIButton) {
+
+
+
+    @IBAction func selectChar1(_ sender: UIButton) {
         //sender.isHighlighted=true
         if !(sender.isSelected){
-            sender.isSelected=true
-            sender.backgroundColor=UIColor.red
-            chartype = 3;
+             selectCharButton(sender)
+            deselectCharButton(char2)
+            deselectCharButton(char3)
+            deselectCharButton(char4)
+            deselectCharButton(char5)
+            deselectCharButton(char6)
+            }
+        else {
+          
+            }
 
+        chartype = 1;
+        charSelected.text = "\(chartype)"
+    }
+    @IBAction func selectChar2(_ sender: UIButton) {
+        //sender.isHighlighted=true
+        if !(sender.isSelected){
+            selectCharButton(sender)
+            deselectCharButton(char1)
+                      deselectCharButton(char3)
+                      deselectCharButton(char4)
+                      deselectCharButton(char5)
+                      deselectCharButton(char6)
+            }
+        else {
+    
+            }
+
+        chartype = 2;
+        charSelected.text = "\(chartype)"
+    }
+
+    
+    @IBAction func selectChar3(_ sender: UIButton) {
+        //sender.isHighlighted=true
+        if !(sender.isSelected){
+            selectCharButton(sender)
+            deselectCharButton(char1)
+                      deselectCharButton(char2)
+                      deselectCharButton(char4)
+                      deselectCharButton(char5)
+                      deselectCharButton(char6)
         }
         else {
-            sender.isSelected=false
-            sender.backgroundColor=UIColor.white
-        }
+            
+          }
+        chartype = 3;
+        charSelected.text = "\(chartype)"
 
     }
-    @IBAction func selectFemale1(_ sender: UIButton) {
+    @IBAction func selectChar4(_ sender: UIButton) {
         //sender.isHighlighted=true
              if !(sender.isSelected){
-                sender.isSelected=true
-                sender.backgroundColor=UIColor.red
-                chartype = 4;
-
+              selectCharButton(sender)
+                deselectCharButton(char1)
+                          deselectCharButton(char2)
+                          deselectCharButton(char3)
+                          deselectCharButton(char5)
+                          deselectCharButton(char6)
             }
             else {
-                sender.isSelected=false
-                sender.backgroundColor=UIColor.white
+               
             }
 
-        
+        chartype = 4;
+        charSelected.text = "\(chartype)"
 
     }
-    @IBAction func selectFemale2(_ sender: UIButton) {
+    @IBAction func selectChar5(_ sender: UIButton) {
         //sender.isHighlighted=true
-                if !(sender.isSelected){
-                sender.isSelected=true
-                sender.backgroundColor=UIColor.red
-                    chartype = 5;
-
+        if !(sender.isSelected){
+             selectCharButton(sender)
+            deselectCharButton(char1)
+                      deselectCharButton(char2)
+                      deselectCharButton(char3)
+                      deselectCharButton(char4)
+                      deselectCharButton(char6)
             }
-            else {
-                sender.isSelected=false
-                sender.backgroundColor=UIColor.white
+        else {
+                
             }
 
-        
+        chartype = 5;
+        charSelected.text = "\(chartype)"
 
     }
-    @IBAction func selectFemale3(_ sender: UIButton) {
+    @IBAction func selectChar6(_ sender: UIButton) {
         //sender.isHighlighted=true
-                if !(sender.isSelected){
-                sender.isSelected=true
-                sender.backgroundColor=UIColor.red
-                    chartype = 6;
-
+        if !(sender.isSelected){
+           selectCharButton(sender)
+            deselectCharButton(char2)
+                      deselectCharButton(char3)
+                      deselectCharButton(char4)
+                      deselectCharButton(char5)
+                      deselectCharButton(char1)
             }
-            else {
-                sender.isSelected=false
-                sender.backgroundColor=UIColor.white
+        else {
+                
             }
 
-        
+        chartype = 6;
+        charSelected.text = "\(chartype)"
     }
     func tapGesture(){
         

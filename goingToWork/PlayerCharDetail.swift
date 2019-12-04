@@ -7,8 +7,13 @@
 //
 
 import Foundation
+import UIKit
 
-class PlayerCharacter{
+
+class PlayerCharDetail: UIViewController{
+    
+    var  noOfPlayer = 0
+    
     
     func setPlayerDetail(){
         

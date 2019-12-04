@@ -12,12 +12,13 @@ import UIKit
 
 class PlayerPickerController: UIViewController{
 
-    @IBOutlet weak var label: UILabel!
+   @IBOutlet weak var label: UILabel!
     @IBOutlet weak var PlayerPicker: UIPickerView!
-    private let dataSource = ["2", "3","4"]
+    private let dataSource = ["1","2", "3","4"]
+    private var myGame = Game()
+    private var count: Int64 = 0
     
-    
-    
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,12 +45,26 @@ extension PlayerPickerController: UIPickerViewDelegate, UIPickerViewDataSource{
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         label.text = dataSource[row]
+        //myGame.numberOfPlayers = (Int64(dataSource[row]))!
+        count = (Int64(dataSource[row]))!
+        myGame.numberOfPlayers = (Int64(dataSource[row]))!
     }
     
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return dataSource[row]
+    private func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> Int? {
+        myGame.numberOfPlayers = (Int64(dataSource[row]))!
+        return Int(dataSource[row])
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "charDetail" {
+                let controller = segue.destination as! PlayerCharDetail
+            controller.noOfPlayer =  Int(myGame.numberOfPlayers)
+            
+            
+            }
+        }
+    }
+ 
     
-}
+
 

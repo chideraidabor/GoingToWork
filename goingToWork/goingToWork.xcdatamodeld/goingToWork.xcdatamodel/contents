@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="18G1012" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="Entity" representedClassName="Entity" syncable="YES" codeGenerationType="class">
-        <attribute name="gender" optional="YES" attributeType="String"/>
-        <attribute name="playerName" optional="YES" attributeType="String"/>
-        <attribute name="playerPosition" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="profession" optional="YES" attributeType="String"/>
-        <attribute name="spin" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="vehicleImage" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14492.1" systemVersion="18G103" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Game" representedClassName="Game" syncable="YES" codeGenerationType="class">
+        <attribute name="numberOfPlayers" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Player" representedClassName="Player" syncable="YES" codeGenerationType="class">
+        <attribute name="gender" optional="YES" attributeType="String">
+            <userInfo/>
+        </attribute>
+        <attribute name="playerName" optional="YES" attributeType="String">
+            <userInfo/>
+        </attribute>
+        <attribute name="playerPosition" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES">
+            <userInfo/>
+        </attribute>
+        <attribute name="profession" optional="YES" attributeType="String">
+            <userInfo/>
+        </attribute>
+        <attribute name="spin" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES">
+            <userInfo/>
+        </attribute>
+        <attribute name="vehicleImage" optional="YES" attributeType="UUID" usesScalarValueType="NO">
+            <userInfo/>
+        </attribute>
     </entity>
     <elements>
-        <element name="Entity" positionX="-54" positionY="-9" width="128" height="133"/>
+        <element name="Game" positionX="-54" positionY="36" width="128" height="60"/>
+        <element name="Player" positionX="-54" positionY="-9" width="128" height="135"/>
     </elements>
 </model>

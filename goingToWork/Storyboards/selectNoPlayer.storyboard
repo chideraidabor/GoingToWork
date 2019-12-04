@@ -11,7 +11,7 @@
         <!--PlayerNumbers-->
         <scene sceneID="vRl-hy-aB8">
             <objects>
-                <viewController storyboardIdentifier="selectPlayer" title="PlayerNumbers" id="NwT-hB-Yxd" customClass="PlayerPickerController" customModule="goingToWork" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="selectPlayer" title="PlayerNumbers" modalPresentationStyle="fullScreen" id="NwT-hB-Yxd" customClass="PlayerPickerController" customModule="goingToWork" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VAa-JE-2pz">
                         <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

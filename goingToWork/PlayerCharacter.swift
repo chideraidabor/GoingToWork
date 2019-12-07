@@ -8,7 +8,7 @@
 
 import Foundation
 
-class PlayerCharDetail{
+class PlayerCharacter{
     
     func setPlayerDetail(){
         

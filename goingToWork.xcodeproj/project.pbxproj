@@ -30,7 +30,7 @@
 		E961BDF02370C251006D383E /* GameInstructions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E961BDEF2370C251006D383E /* GameInstructions.storyboard */; };
 		E961BE2F2370D146006D383E /* GameInstructionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E961BE2E2370D146006D383E /* GameInstructionsVC.swift */; };
 		E9701E992379FCDF00336EBF /* ArtistCredits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9701E982379FCDF00336EBF /* ArtistCredits.storyboard */; };
-		E98A47BF2375F4AF003DEC8E /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A47BE2375F4AF003DEC8E /* Vehicle.swift */; };
+		E98A47BF2375F4AF003DEC8E /* VehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98A47BE2375F4AF003DEC8E /* VehicleViewController.swift */; };
 		E9E3E7F22374E5A300D636F2 /* SpinAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E3E7F12374E5A300D636F2 /* SpinAnimationVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,7 +81,7 @@
 		E961BDEF2370C251006D383E /* GameInstructions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameInstructions.storyboard; sourceTree = "<group>"; };
 		E961BE2E2370D146006D383E /* GameInstructionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInstructionsVC.swift; sourceTree = "<group>"; };
 		E9701E982379FCDF00336EBF /* ArtistCredits.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArtistCredits.storyboard; sourceTree = "<group>"; };
-		E98A47BE2375F4AF003DEC8E /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		E98A47BE2375F4AF003DEC8E /* VehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewController.swift; sourceTree = "<group>"; };
 		E9E3E7F12374E5A300D636F2 /* SpinAnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinAnimationVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,7 +155,7 @@
 				ABCCC8D623662FFC002463E3 /* Board.swift */,
 				ABCCC8D823663012002463E3 /* PlayerPickerController.swift */,
 				ABCCC8DA23663025002463E3 /* Game.swift */,
-				E98A47BE2375F4AF003DEC8E /* Vehicle.swift */,
+				E98A47BE2375F4AF003DEC8E /* VehicleViewController.swift */,
 				E9E3E7F12374E5A300D636F2 /* SpinAnimationVC.swift */,
 				676BC719237A055E004B39AE /* Player.swift */,
 				E961BE2E2370D146006D383E /* GameInstructionsVC.swift */,
@@ -327,7 +327,7 @@
 			files = (
 				B899219D235E468C00EDB8AF /* gameboardViewController.swift in Sources */,
 				676BC71A237A055E004B39AE /* Player.swift in Sources */,
-				B899219D235E468C00EDB8AF /* ViewController.swift in Sources */,
+				B899219D235E468C00EDB8AF /* gameboardViewController.swift in Sources */,
 				E9E3E7F22374E5A300D636F2 /* SpinAnimationVC.swift in Sources */,
 				ABCCC8DB23663025002463E3 /* Game.swift in Sources */,
 				B899219D235E468C00EDB8AF /* gameboardViewController.swift in Sources */,
@@ -337,7 +337,7 @@
 				ABCCC8D923663012002463E3 /* PlayerPickerController.swift in Sources */,
 				E961BE2F2370D146006D383E /* GameInstructionsVC.swift in Sources */,
 				B89921A3235E468C00EDB8AF /* goingToWork.xcdatamodeld in Sources */,
-				E98A47BF2375F4AF003DEC8E /* Vehicle.swift in Sources */,
+				E98A47BF2375F4AF003DEC8E /* VehicleViewController.swift in Sources */,
 				CA16A09A237CA7F800BAF68D /* gameboardViewController.swift in Sources */,
 				16CB46A7236783F2007A87C6 /* PlayerCharDetail.swift in Sources */,
 			);

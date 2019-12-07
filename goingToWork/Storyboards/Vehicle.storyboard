@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="ipad9_7" orientation="landscape">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,45 +11,34 @@
         <!--View Controller-->
         <scene sceneID="bEy-WS-tBF">
             <objects>
-                <viewController storyboardIdentifier="Vehicle" id="CKD-GB-khw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Vehicle" modalPresentationStyle="fullScreen" id="CKD-GB-khw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VnW-WO-Lfy">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Choose your vehicle" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fDE-DB-4Hp">
-                                <rect key="frame" x="240" y="119" width="545" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Choose your vehicle" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fDE-DB-4Hp">
+                                <rect key="frame" x="304" y="116" width="416" height="63.5"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yw5-QH-WoB">
-                                <rect key="frame" x="209" y="239" width="231" height="234"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="La_Boutique_Dei_Colori_Car02"/>
-                                <connections>
-                                    <action selector="blackCar:" destination="a4Q-qf-4xw" eventType="touchUpInside" id="woq-s1-JUp"/>
-                                    <action selector="car:" destination="a4Q-qf-4xw" eventType="touchUpInside" id="dfE-Ji-doJ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYS-Qw-Fpn">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYS-Qw-Fpn">
                                 <rect key="frame" x="595" y="239" width="231" height="234"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="La_Boutique_Dei_Colori_Car12"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ku7-ui-oga">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ku7-ui-oga">
                                 <rect key="frame" x="209" y="428" width="231" height="234"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="La_Boutique_Dei_Colori_Car25"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duC-qK-n89">
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duC-qK-n89">
                                 <rect key="frame" x="595" y="428" width="231" height="234"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="234" id="Fu0-hE-rIf"/>
+                                </constraints>
                                 <state key="normal" image="La_Boutique_Dei_Colori_Car39"/>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QSr-sr-YpO">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QSr-sr-YpO">
                                 <rect key="frame" x="462" y="628" width="102" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdl-eP-a28">
                                         <rect key="frame" x="0.0" y="0.0" width="102" height="48"/>
@@ -69,8 +56,42 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yw5-QH-WoB">
+                                <rect key="frame" x="209" y="239" width="236" height="234"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="236" id="IyU-pg-f72"/>
+                                </constraints>
+                                <state key="normal" image="La_Boutique_Dei_Colori_Car02"/>
+                                <connections>
+                                    <action selector="blackCar:" destination="a4Q-qf-4xw" eventType="touchUpInside" id="woq-s1-JUp"/>
+                                    <action selector="car:" destination="a4Q-qf-4xw" eventType="touchUpInside" id="dfE-Ji-doJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fDE-DB-4Hp" firstAttribute="leading" secondItem="qtt-lk-3RX" secondAttribute="leading" constant="304" id="3H9-EU-j5L"/>
+                            <constraint firstItem="duC-qK-n89" firstAttribute="leading" secondItem="QSr-sr-YpO" secondAttribute="trailing" constant="31" id="BY2-iw-1EJ"/>
+                            <constraint firstItem="QSr-sr-YpO" firstAttribute="leading" secondItem="ku7-ui-oga" secondAttribute="trailing" constant="22" id="Cyc-uu-tRj"/>
+                            <constraint firstItem="duC-qK-n89" firstAttribute="bottom" secondItem="ku7-ui-oga" secondAttribute="bottom" id="EJ9-aT-edx"/>
+                            <constraint firstItem="Yw5-QH-WoB" firstAttribute="top" secondItem="fDE-DB-4Hp" secondAttribute="bottom" constant="59.5" id="ET3-BS-ADB"/>
+                            <constraint firstItem="qtt-lk-3RX" firstAttribute="bottom" secondItem="Zdl-eP-a28" secondAttribute="bottom" constant="92" id="GLu-rr-ZQI"/>
+                            <constraint firstItem="ku7-ui-oga" firstAttribute="leading" secondItem="qtt-lk-3RX" secondAttribute="leading" constant="209" id="MHw-YR-Spq"/>
+                            <constraint firstItem="fDE-DB-4Hp" firstAttribute="top" secondItem="qtt-lk-3RX" secondAttribute="top" constant="116" id="NHD-8Z-yLD"/>
+                            <constraint firstItem="Zdl-eP-a28" firstAttribute="top" secondItem="fDE-DB-4Hp" secondAttribute="bottom" constant="448.5" id="Sqs-0M-1pA"/>
+                            <constraint firstItem="duC-qK-n89" firstAttribute="leading" secondItem="eYS-Qw-Fpn" secondAttribute="leading" id="Uhj-89-dW6"/>
+                            <constraint firstItem="duC-qK-n89" firstAttribute="trailing" secondItem="eYS-Qw-Fpn" secondAttribute="trailing" id="WjF-ct-eUG"/>
+                            <constraint firstItem="duC-qK-n89" firstAttribute="top" secondItem="ku7-ui-oga" secondAttribute="top" id="XcM-N2-1Tt"/>
+                            <constraint firstItem="qtt-lk-3RX" firstAttribute="trailing" secondItem="Zdl-eP-a28" secondAttribute="trailing" constant="460" id="ZSv-W5-ke2"/>
+                            <constraint firstItem="qtt-lk-3RX" firstAttribute="trailing" secondItem="fDE-DB-4Hp" secondAttribute="trailing" constant="304" id="a55-Gh-Ac8"/>
+                            <constraint firstItem="Yw5-QH-WoB" firstAttribute="bottom" secondItem="eYS-Qw-Fpn" secondAttribute="bottom" id="cd4-NP-D1y"/>
+                            <constraint firstItem="qtt-lk-3RX" firstAttribute="trailing" secondItem="duC-qK-n89" secondAttribute="trailing" constant="198" id="hgA-h2-ArQ"/>
+                            <constraint firstItem="qtt-lk-3RX" firstAttribute="bottom" secondItem="Yw5-QH-WoB" secondAttribute="bottom" constant="295" id="jqc-Yc-B7M"/>
+                            <constraint firstItem="ku7-ui-oga" firstAttribute="leading" secondItem="Yw5-QH-WoB" secondAttribute="leading" id="nrX-u4-SZY"/>
+                            <constraint firstItem="Zdl-eP-a28" firstAttribute="leading" secondItem="qtt-lk-3RX" secondAttribute="leading" constant="462" id="pEU-zf-elh"/>
+                            <constraint firstItem="Yw5-QH-WoB" firstAttribute="top" secondItem="eYS-Qw-Fpn" secondAttribute="top" id="xM5-d9-maS"/>
+                            <constraint firstItem="qtt-lk-3RX" firstAttribute="bottom" secondItem="duC-qK-n89" secondAttribute="bottom" constant="106" id="zvq-df-XKE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qtt-lk-3RX"/>
                     </view>
                 </viewController>

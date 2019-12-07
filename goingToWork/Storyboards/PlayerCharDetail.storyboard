@@ -8,6 +8,59 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
+        <scene sceneID="pPD-hL-WDN">
+            <objects>
+                <viewController id="aKt-Kh-AzE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mdz-Me-qxp">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duC-hR-gGt">
+                                <rect key="frame" x="535" y="669" width="124" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="Confirm"/>
+                                <connections>
+                                    <segue destination="97k-MM-wyH" kind="show" id="riS-9t-MTE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xao-F4-kkh">
+                                <rect key="frame" x="0.0" y="298" width="241" height="239"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="female_firefighter_hat"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjY-dm-MGK">
+                                <rect key="frame" x="249" y="297" width="241" height="239"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="female_chef_hat"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmQ-Cd-GnF">
+                                <rect key="frame" x="498" y="296" width="241" height="239"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="female_constructworker_hat"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRH-Tx-guo">
+                                <rect key="frame" x="747" y="296" width="241" height="239"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="female_police_hat"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player, select your job" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlz-EI-IpU">
+                                <rect key="frame" x="513" y="95" width="168" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="cYC-H2-2X8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OcN-gX-vzm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="798.99497487437191" y="-661.15107913669067"/>
+        </scene>
         <!--charDetailVC-->
         <scene sceneID="GvN-Kh-cFc">
             <objects>
@@ -95,15 +148,11 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NBm-5g-Haa">
-                                <rect key="frame" x="535" y="651" width="124" height="55"/>
+                                <rect key="frame" x="569.5" y="676" width="55" height="30"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duC-hR-gGt">
-                                        <rect key="frame" x="0.0" y="0.0" width="124" height="55"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVe-Xz-vYE">
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
                                         <state key="normal" title="Confirm"/>
-                                        <connections>
-                                            <segue destination="97k-MM-wyH" kind="show" id="riS-9t-MTE"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -150,9 +199,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="female_chef_hat" width="3600" height="3600"/>
+        <image name="female_constructworker_hat" width="3600" height="3600"/>
+        <image name="female_firefighter_hat" width="3600" height="3600"/>
         <image name="female_generic1" width="3600" height="3600"/>
         <image name="female_generic2" width="3600" height="3600"/>
         <image name="female_generic3" width="3600" height="3600"/>
+        <image name="female_police_hat" width="3600" height="3600"/>
         <image name="male_generic1" width="3600" height="3600"/>
         <image name="male_generic2" width="3600" height="3600"/>
         <image name="male_generic3" width="3600" height="3600"/>

@@ -10,7 +10,7 @@ import UIKit
 
 class PlayerCharDetailVC: UIViewController, UICollectionViewDelegate {
     var chartype: Int = 0;
-    var  noOfPlayer = 0
+    var  noOfPlayer = 2
     
     var playerSelectorVC: PlayerPickerController?
   //  var job

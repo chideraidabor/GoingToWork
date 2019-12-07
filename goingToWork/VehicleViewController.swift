@@ -75,7 +75,7 @@ class VehicleViewController: UIViewController {
            }
        }
        
-       var detailItem: Entity? {
+       var detailItem: Player? {
            didSet {
                // Update the view.
                //configureView()

@@ -6,6 +6,8 @@
 //  Copyright © 2019 Gannon University. All rights reserved.
 //
 
+import UIKit
+
 import Foundation
 import UIKit
 class Board: UIViewController {
@@ -18,4 +20,15 @@ class Board: UIViewController {
 //        carImage.image = newImage
     }
 }
+
+//class Board: NSObject {
+    
+    
+    
+    
+}
+
+
+
+
 

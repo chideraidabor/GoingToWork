@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Vehicle View Controller-->
         <scene sceneID="bEy-WS-tBF">
             <objects>
-                <viewController storyboardIdentifier="Vehicle" modalPresentationStyle="fullScreen" id="CKD-GB-khw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Vehicle" modalPresentationStyle="fullScreen" id="CKD-GB-khw" customClass="VehicleViewController" customModule="goingToWork" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VnW-WO-Lfy">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,10 +25,16 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYS-Qw-Fpn">
                                 <rect key="frame" x="595" y="239" width="231" height="234"/>
                                 <state key="normal" image="La_Boutique_Dei_Colori_Car12"/>
+                                <connections>
+                                    <action selector="purpleCar:" destination="CKD-GB-khw" eventType="touchUpInside" id="zry-r3-jGB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ku7-ui-oga">
                                 <rect key="frame" x="209" y="428" width="231" height="234"/>
                                 <state key="normal" image="La_Boutique_Dei_Colori_Car25"/>
+                                <connections>
+                                    <action selector="redCar:" destination="CKD-GB-khw" eventType="touchUpInside" id="mW8-A2-LA0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duC-qK-n89">
                                 <rect key="frame" x="595" y="428" width="231" height="234"/>
@@ -36,6 +42,9 @@
                                     <constraint firstAttribute="height" constant="234" id="Fu0-hE-rIf"/>
                                 </constraints>
                                 <state key="normal" image="La_Boutique_Dei_Colori_Car39"/>
+                                <connections>
+                                    <action selector="greenCar:" destination="CKD-GB-khw" eventType="touchUpInside" id="bX5-gq-ceG"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QSr-sr-YpO">
                                 <rect key="frame" x="462" y="628" width="102" height="48"/>
@@ -63,8 +72,8 @@
                                 </constraints>
                                 <state key="normal" image="La_Boutique_Dei_Colori_Car02"/>
                                 <connections>
-                                    <action selector="blackCar:" destination="a4Q-qf-4xw" eventType="touchUpInside" id="woq-s1-JUp"/>
-                                    <action selector="car:" destination="a4Q-qf-4xw" eventType="touchUpInside" id="dfE-Ji-doJ"/>
+                                    <action selector="blackCar:" destination="CKD-GB-khw" eventType="touchUpInside" id="QmY-yn-CUa"/>
+                                    <action selector="blackCar:" destination="a4Q-qf-4xw" eventType="touchUpInside" id="s9M-Or-xo7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -94,6 +103,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qtt-lk-3RX"/>
                     </view>
+                    <connections>
+                        <outlet property="black" destination="Yw5-QH-WoB" id="TAN-Co-L0q"/>
+                        <outlet property="green" destination="duC-qK-n89" id="Cn2-io-8RI"/>
+                        <outlet property="purple" destination="eYS-Qw-Fpn" id="hPj-sT-4Eh"/>
+                        <outlet property="red" destination="ku7-ui-oga" id="Bxf-Jh-9Mc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZ9-y3-b95" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="a4Q-qf-4xw" userLabel="Exit" sceneMemberID="exit"/>

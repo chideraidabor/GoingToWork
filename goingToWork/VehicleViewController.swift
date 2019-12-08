@@ -50,6 +50,57 @@ class VehicleViewController: UIViewController {
 //        self.dismiss(animated: true, completion: nil)
 //    }
 //
+    @IBOutlet weak var black: UIButton!
+    @IBOutlet weak var green: UIButton!
+    @IBOutlet weak var red: UIButton!
+    @IBOutlet weak var purple: UIButton!
+    
+    fileprivate func selectCar(_ sender: UIButton) {
+        sender.isSelected = true
+        sender.backgroundColor = UIColor.blue
+    }
+    
+    fileprivate func unselectCar(_ sender: UIButton) {
+        sender.isSelected = true
+        sender.backgroundColor = UIColor.white
+    }
+    
+    @IBAction func blackCar(_ sender: UIButton) {
+        if !(sender.isSelected) {
+            selectCar(sender)
+            unselectCar(red)
+            unselectCar(purple)
+            unselectCar(green)
+        }
+    }
+    
+    @IBAction func purpleCar(_ sender: UIButton) {
+        if !(sender.isSelected) {
+            selectCar(sender)
+            unselectCar(red)
+            unselectCar(black)
+            unselectCar(green)
+        }
+    }
+    
+    @IBAction func redCar(_ sender: UIButton) {
+        if !(sender.isSelected) {
+            selectCar(sender)
+            unselectCar(black)
+            unselectCar(purple)
+            unselectCar(green)
+        }
+    }
+    
+    @IBAction func greenCar(_ sender: UIButton) {
+        if !(sender.isSelected) {
+            selectCar(sender)
+            unselectCar(red)
+            unselectCar(purple)
+            unselectCar(black)
+        }
+    }
+    
     @objc func didTap(sender: UITapGestureRecognizer) {
            let tapPoint = sender.location(in: self.view)
            
@@ -74,19 +125,19 @@ class VehicleViewController: UIViewController {
                //detailItem?.vehicleImage = blackCar.image
            }
        }
-       
-       var detailItem: Player? {
-           didSet {
-               // Update the view.
-               //configureView()
-               car(AnyObject.self)
-           }
-       }
+//
+//       var detailItem: Player? {
+//           didSet {
+//               // Update the view.
+//               //configureView()
+//               car(AnyObject.self)
+//           }
+//       }
        
        @IBOutlet weak var blackCar: UIImageView!
        
        @IBAction func car(_ sender: Any) {
-           if let detail = detailItem {
+          // if let detail = detailItem {
                if let carButton = blackCar {
                    //let convert = UUID(detail.vehicleImage)
                    
@@ -94,7 +145,7 @@ class VehicleViewController: UIViewController {
                    //carButton.image = detail.vehicleImage
                }
            }
-       }
+       
 
 }
 

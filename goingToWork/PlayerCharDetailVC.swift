@@ -11,10 +11,15 @@ import UIKit
 class PlayerCharDetailVC: UIViewController {
     var chartype: Int = 0;
     var noOfPlayer = 2
+    var currentNoPlayer = 1
     
     var playerSelectorVC: PlayerPickerController?
     var job: String  = "none"
     
+     
+    @IBAction func unwindToVC(segue:UIStoryboardSegue) {
+        currentNoPlayer+=1
+    }
     
     //Outlet for each option selected
     
@@ -217,16 +222,14 @@ class PlayerCharDetailVC: UIViewController {
     }
     func tapGesture(){
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //for setting sth on vehicle (passing data)
-        //if segue.destination is Vehicle{
+        if segue.destination is VehicleViewController{
         
-            //let vc = segue.destination as? Vehicle
-            /*/
-            {
-                do sth (set a
-            }
-         */
+            let vc = segue.destination as? VehicleViewController
+            vc?.currPlayer = currentNoPlayer
+         
         }
     //ref: learnappmaking.com (pass data vc)
     //todo: Pass data between VC (playerpicker?)
@@ -235,4 +238,5 @@ class PlayerCharDetailVC: UIViewController {
     //2. protocol/delegation
     //3. closure
     
+    }
 }

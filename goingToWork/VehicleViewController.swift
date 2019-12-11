@@ -12,6 +12,7 @@ class VehicleViewController: UIViewController {
     
     var defaultImageStrings: [String] = ["BlackCar.png"]
      var myCars: [UIImageView] = []
+    var currPlayer = 1
      
      override func viewDidLoad() {
 
@@ -116,16 +117,35 @@ class VehicleViewController: UIViewController {
        }
 
        @IBAction func playGameButton(_ sender: Any) {
-           performSegue(withIdentifier: "toGameBoard", sender: nil)
+        if (currPlayer<2){
+
+            performSegue(withIdentifier: "unwindSegueToVC", sender: self)
+        }
+        else{
+            performSegue(withIdentifier: "toGameBoard", sender: nil)
+        }
        }
        
+    
+    @IBAction func goBackToOneButton(_ sender: Any) {
+        
+    }
+    
        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-           if segue.identifier == "toGameBoard" {
+            if segue.identifier == "toGameBoard" {
                let vc = segue.destination as! gameboardViewController
                //detailItem?.vehicleImage = blackCar.image
-           }
+            }
+            if segue.identifier == "loopTwice" {
+               
+            }
        }
-//
+    
+    
+
+      
+        
+ 
 //       var detailItem: Player? {
 //           didSet {
 //               // Update the view.

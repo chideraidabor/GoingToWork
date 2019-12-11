@@ -8,29 +8,28 @@
 
 import Foundation
 import UIKit
+import CoreData
 
-
-class PlayerPickerController: UIViewController{
-
-   @IBOutlet weak var label: UILabel!
+class PlayerPickerController: UIViewController, NSFetchedResultsControllerDelegate {
+var managedObjectContext: NSManagedObjectContext? = nil
     @IBOutlet weak var PlayerPicker: UIPickerView!
-    private let dataSource = ["1","2", "3","4"]
-    private var myGame = Game()
+    private let dataSource = ["2", "3","4"]
+    var myGame = Game()
+  
     private var count: Int64 = 0
-    
- 
-    
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         PlayerPicker.dataSource = self
         PlayerPicker.delegate = self
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // dispose of any resourses that can be recreated
     }
-    
+
 
 }
 
@@ -38,33 +37,33 @@ extension PlayerPickerController: UIPickerViewDelegate, UIPickerViewDataSource{
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
-    
+
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return dataSource.count
     }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        label.text = dataSource[row]
-        //myGame.numberOfPlayers = (Int64(dataSource[row]))!
+
+    private func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int){
+
         count = (Int64(dataSource[row]))!
         myGame.numberOfPlayers = (Int64(dataSource[row]))!
+        
     }
     
-    private func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> Int? {
-        myGame.numberOfPlayers = (Int64(dataSource[row]))!
-        return Int(dataSource[row])
+    internal func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return dataSource[row]
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "charDetail" {
                 let controller = segue.destination as! PlayerCharDetail
             controller.noOfPlayer =  Int(myGame.numberOfPlayers)
-            
-            
+            //performSegue(withIdentifier: "charDetail", sender: self)
             }
         }
-    }
- 
+
     
+    
+    
+    }
 
 

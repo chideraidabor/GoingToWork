@@ -14,7 +14,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="charDetailScreen" storyboardName="PlayerCharDetail" referencedIdentifier="charDetailVC" id="L9j-2p-KCb" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1SB-QG-5mG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18" y="-340"/>
+            <point key="canvasLocation" x="-8" y="-509"/>
         </scene>
         <!--Player Char DetailVC-->
         <scene sceneID="DDR-E7-zNP">
@@ -27,7 +27,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPu-wa-0yC">
                                 <rect key="frame" x="299" y="35" width="675" height="48"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Select your Character" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jic-Vt-x8i" userLabel="Select your character">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Player, select your character" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jic-Vt-x8i" userLabel="Select your character">
                                         <rect key="frame" x="0.0" y="0.0" width="581" height="48"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <nil key="textColor"/>
@@ -46,7 +46,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sD-G8-WjU">
                                         <rect key="frame" x="0.0" y="0.0" width="169" height="362"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <state key="normal" title="Button" image="male_generic1"/>
                                         <connections>
                                             <action selector="selectChar1:" destination="61c-Is-6tQ" eventType="touchUpInside" id="17a-he-6aX"/>
@@ -54,7 +54,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R37-Ys-UD0">
                                         <rect key="frame" x="178" y="0.0" width="169.5" height="362"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <state key="normal" title="Button" image="male_generic2"/>
                                         <connections>
                                             <action selector="selectChar2:" destination="61c-Is-6tQ" eventType="touchUpInside" id="NeX-Uf-qnq"/>
@@ -62,7 +62,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnY-rX-mNK">
                                         <rect key="frame" x="356.5" y="0.0" width="169" height="362"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <state key="normal" title="Button" image="male_generic3"/>
                                         <connections>
                                             <action selector="selectChar3:" destination="61c-Is-6tQ" eventType="touchUpInside" id="fwo-Ll-RzP"/>
@@ -70,7 +70,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pA-dJ-egX">
                                         <rect key="frame" x="534.5" y="0.0" width="169" height="362"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <state key="normal" title="Button" image="female_generic1"/>
                                         <connections>
                                             <action selector="selectChar4:" destination="61c-Is-6tQ" eventType="touchUpInside" id="mhY-GI-T1k"/>
@@ -78,7 +78,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="td5-Fb-i6Z">
                                         <rect key="frame" x="712.5" y="0.0" width="169.5" height="362"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <state key="normal" title="Button" image="female_generic2"/>
                                         <connections>
                                             <action selector="selectChar5:" destination="61c-Is-6tQ" eventType="touchUpInside" id="KM4-Fl-cRP"/>
@@ -86,7 +86,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeA-KV-Wu4">
                                         <rect key="frame" x="891" y="0.0" width="169" height="362"/>
-                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <state key="normal" title="Button" image="female_generic3"/>
                                         <connections>
                                             <action selector="selectChar6:" destination="61c-Is-6tQ" eventType="touchUpInside" id="tcc-Q3-JFj"/>
@@ -95,14 +95,13 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NBm-5g-Haa">
-                                <rect key="frame" x="535" y="651" width="124" height="55"/>
+                                <rect key="frame" x="569.5" y="676" width="55" height="30"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duC-hR-gGt">
-                                        <rect key="frame" x="0.0" y="0.0" width="124" height="55"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVe-Xz-vYE">
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
                                         <state key="normal" title="Confirm"/>
                                         <connections>
-                                            <segue destination="97k-MM-wyH" kind="show" id="riS-9t-MTE"/>
+                                            <segue destination="avJ-aR-3Qz" kind="show" identifier="JobSelect" id="Iuo-fe-t75"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -124,7 +123,7 @@
                         <viewLayoutGuide key="safeArea" id="DbG-bP-YpR"/>
                     </view>
                     <connections>
-                        <outlet property="Confirm" destination="duC-hR-gGt" id="1ff-XG-IxM"/>
+                        <outlet property="PlayerNumber" destination="jic-Vt-x8i" id="F8y-ko-BCP"/>
                         <outlet property="char1" destination="6sD-G8-WjU" id="CbA-LZ-Yej"/>
                         <outlet property="char2" destination="R37-Ys-UD0" id="gkD-fI-NYv"/>
                         <outlet property="char3" destination="EnY-rX-mNK" id="1uE-lx-0ET"/>
@@ -146,7 +145,17 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kKq-3r-mwb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="134" y="437"/>
+            <point key="canvasLocation" x="660" y="404"/>
+        </scene>
+        <!--JobSelect-->
+        <scene sceneID="yCV-JW-pr1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlayerJobSelect" referencedIdentifier="JobSelect" id="avJ-aR-3Qz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gCy-pM-QRA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kKU-Yk-lvK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="637" y="28"/>
         </scene>
     </scenes>
     <resources>

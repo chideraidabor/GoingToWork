@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CKD-GB-khw">
-    <device id="ipad12_9" orientation="landscape" layout="fullscreen" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
@@ -8,91 +8,137 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Vehicle View Controller-->
         <scene sceneID="bEy-WS-tBF">
             <objects>
-                <viewController storyboardIdentifier="Vehicle" modalPresentationStyle="fullScreen" id="CKD-GB-khw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Vehicle" modalPresentationStyle="fullScreen" id="CKD-GB-khw" customClass="VehicleViewController" customModule="goingToWork" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VnW-WO-Lfy">
-                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="La_Boutique_Dei_Colori_Car02" translatesAutoresizingMaskIntoConstraints="NO" id="Tt5-Qm-lmW">
-                                <rect key="frame" x="307" y="323" width="313" height="180"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Tt5-Qm-lmW" secondAttribute="height" multiplier="313:180" id="f96-0Y-jji"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="La_Boutique_Dei_Colori_Car25" translatesAutoresizingMaskIntoConstraints="NO" id="CYh-vD-ri7">
-                                <rect key="frame" x="307" y="580" width="313" height="180"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="313" id="qKr-vf-rUm"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="La_Boutique_Dei_Colori_Car39" translatesAutoresizingMaskIntoConstraints="NO" id="hRy-C5-eYb">
-                                <rect key="frame" x="738" y="580" width="313" height="180"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="Qcc-90-n3L"/>
-                                    <constraint firstAttribute="width" constant="313" id="hVs-3b-tkd"/>
-                                </constraints>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="La_Boutique_Dei_Colori_Car12" translatesAutoresizingMaskIntoConstraints="NO" id="kHj-5l-Tzh">
-                                <rect key="frame" x="738" y="323" width="313" height="180"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="kHj-5l-Tzh" secondAttribute="height" multiplier="313:180" id="NC8-Sb-cx1"/>
-                                </constraints>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Choose your vehicle" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fDE-DB-4Hp">
-                                <rect key="frame" x="396" y="159" width="545" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Choose your vehicle" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fDE-DB-4Hp">
+                                <rect key="frame" x="304" y="116" width="416" height="63.5"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdl-eP-a28">
-                                <rect key="frame" x="595" y="768" width="176" height="83"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Zdl-eP-a28" secondAttribute="height" multiplier="176:83" id="87H-Pz-tYe"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <state key="normal" title="Play Game">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYS-Qw-Fpn">
+                                <rect key="frame" x="595" y="239" width="231" height="234"/>
+                                <state key="normal" image="La_Boutique_Dei_Colori_Car12"/>
                                 <connections>
-                                    <segue destination="Dv9-6D-6lU" kind="show" id="Edn-IT-rc5"/>
+                                    <action selector="purpleCar:" destination="CKD-GB-khw" eventType="touchUpInside" id="zry-r3-jGB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ku7-ui-oga">
+                                <rect key="frame" x="209" y="428" width="231" height="234"/>
+                                <state key="normal" image="La_Boutique_Dei_Colori_Car25"/>
+                                <connections>
+                                    <action selector="redCar:" destination="CKD-GB-khw" eventType="touchUpInside" id="mW8-A2-LA0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duC-qK-n89">
+                                <rect key="frame" x="595" y="428" width="231" height="234"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="234" id="Fu0-hE-rIf"/>
+                                </constraints>
+                                <state key="normal" image="La_Boutique_Dei_Colori_Car39"/>
+                                <connections>
+                                    <action selector="greenCar:" destination="CKD-GB-khw" eventType="touchUpInside" id="bX5-gq-ceG"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QSr-sr-YpO">
+                                <rect key="frame" x="462" y="628" width="102" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zdl-eP-a28">
+                                        <rect key="frame" x="0.0" y="0.0" width="102" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="8b8-Ml-edP"/>
+                                            <constraint firstAttribute="width" constant="102" id="NKk-DF-Vhe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Okay">
+                                            <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playGameButton:" destination="CKD-GB-khw" eventType="touchUpInside" id="Fhx-rB-B4i"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yw5-QH-WoB">
+                                <rect key="frame" x="209" y="239" width="236" height="234"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="236" id="IyU-pg-f72"/>
+                                </constraints>
+                                <state key="normal" image="La_Boutique_Dei_Colori_Car02"/>
+                                <connections>
+                                    <action selector="blackCar:" destination="CKD-GB-khw" eventType="touchUpInside" id="QmY-yn-CUa"/>
+                                    <action selector="blackCar:" destination="a4Q-qf-4xw" eventType="touchUpInside" id="s9M-Or-xo7"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="CYh-vD-ri7" firstAttribute="leading" secondItem="qtt-lk-3RX" secondAttribute="leading" constant="307" id="4tQ-u3-vv5"/>
-                            <constraint firstItem="hRy-C5-eYb" firstAttribute="trailing" secondItem="kHj-5l-Tzh" secondAttribute="trailing" id="E8o-ra-uI4"/>
-                            <constraint firstItem="hRy-C5-eYb" firstAttribute="top" secondItem="kHj-5l-Tzh" secondAttribute="bottom" constant="77" id="Gjm-Gn-pkI"/>
-                            <constraint firstItem="CYh-vD-ri7" firstAttribute="top" secondItem="Tt5-Qm-lmW" secondAttribute="bottom" constant="77" id="LNr-PK-kZ0"/>
-                            <constraint firstItem="qtt-lk-3RX" firstAttribute="trailing" secondItem="hRy-C5-eYb" secondAttribute="trailing" constant="315" id="LSF-LT-aG5"/>
-                            <constraint firstItem="CYh-vD-ri7" firstAttribute="leading" secondItem="Tt5-Qm-lmW" secondAttribute="leading" id="LVQ-Qy-AXV"/>
-                            <constraint firstItem="hRy-C5-eYb" firstAttribute="leading" secondItem="kHj-5l-Tzh" secondAttribute="leading" id="NXp-SG-I8s"/>
-                            <constraint firstItem="CYh-vD-ri7" firstAttribute="trailing" secondItem="Tt5-Qm-lmW" secondAttribute="trailing" id="OAw-LZ-hsa"/>
-                            <constraint firstItem="hRy-C5-eYb" firstAttribute="top" secondItem="CYh-vD-ri7" secondAttribute="top" id="g5k-uN-LO9"/>
-                            <constraint firstItem="Zdl-eP-a28" firstAttribute="top" secondItem="hRy-C5-eYb" secondAttribute="bottom" constant="8" symbolic="YES" id="hr0-ZU-GMq"/>
-                            <constraint firstItem="Zdl-eP-a28" firstAttribute="centerX" secondItem="VnW-WO-Lfy" secondAttribute="centerX" id="l41-MO-qg6"/>
-                            <constraint firstItem="Zdl-eP-a28" firstAttribute="top" secondItem="CYh-vD-ri7" secondAttribute="bottom" constant="8" symbolic="YES" id="lpX-ui-Sw2"/>
-                            <constraint firstItem="qtt-lk-3RX" firstAttribute="bottom" secondItem="Zdl-eP-a28" secondAttribute="bottom" constant="173" id="ujY-Km-j5n"/>
-                            <constraint firstItem="Zdl-eP-a28" firstAttribute="leading" secondItem="qtt-lk-3RX" secondAttribute="leading" constant="595" id="xyH-p4-Bx4"/>
+                            <constraint firstItem="fDE-DB-4Hp" firstAttribute="leading" secondItem="qtt-lk-3RX" secondAttribute="leading" constant="304" id="3H9-EU-j5L"/>
+                            <constraint firstItem="duC-qK-n89" firstAttribute="leading" secondItem="QSr-sr-YpO" secondAttribute="trailing" constant="31" id="BY2-iw-1EJ"/>
+                            <constraint firstItem="QSr-sr-YpO" firstAttribute="leading" secondItem="ku7-ui-oga" secondAttribute="trailing" constant="22" id="Cyc-uu-tRj"/>
+                            <constraint firstItem="duC-qK-n89" firstAttribute="bottom" secondItem="ku7-ui-oga" secondAttribute="bottom" id="EJ9-aT-edx"/>
+                            <constraint firstItem="Yw5-QH-WoB" firstAttribute="top" secondItem="fDE-DB-4Hp" secondAttribute="bottom" constant="59.5" id="ET3-BS-ADB"/>
+                            <constraint firstItem="qtt-lk-3RX" firstAttribute="bottom" secondItem="Zdl-eP-a28" secondAttribute="bottom" constant="92" id="GLu-rr-ZQI"/>
+                            <constraint firstItem="ku7-ui-oga" firstAttribute="leading" secondItem="qtt-lk-3RX" secondAttribute="leading" constant="209" id="MHw-YR-Spq"/>
+                            <constraint firstItem="fDE-DB-4Hp" firstAttribute="top" secondItem="qtt-lk-3RX" secondAttribute="top" constant="116" id="NHD-8Z-yLD"/>
+                            <constraint firstItem="Zdl-eP-a28" firstAttribute="top" secondItem="fDE-DB-4Hp" secondAttribute="bottom" constant="448.5" id="Sqs-0M-1pA"/>
+                            <constraint firstItem="duC-qK-n89" firstAttribute="leading" secondItem="eYS-Qw-Fpn" secondAttribute="leading" id="Uhj-89-dW6"/>
+                            <constraint firstItem="duC-qK-n89" firstAttribute="trailing" secondItem="eYS-Qw-Fpn" secondAttribute="trailing" id="WjF-ct-eUG"/>
+                            <constraint firstItem="duC-qK-n89" firstAttribute="top" secondItem="ku7-ui-oga" secondAttribute="top" id="XcM-N2-1Tt"/>
+                            <constraint firstItem="qtt-lk-3RX" firstAttribute="trailing" secondItem="Zdl-eP-a28" secondAttribute="trailing" constant="460" id="ZSv-W5-ke2"/>
+                            <constraint firstItem="qtt-lk-3RX" firstAttribute="trailing" secondItem="fDE-DB-4Hp" secondAttribute="trailing" constant="304" id="a55-Gh-Ac8"/>
+                            <constraint firstItem="Yw5-QH-WoB" firstAttribute="bottom" secondItem="eYS-Qw-Fpn" secondAttribute="bottom" id="cd4-NP-D1y"/>
+                            <constraint firstItem="qtt-lk-3RX" firstAttribute="trailing" secondItem="duC-qK-n89" secondAttribute="trailing" constant="198" id="hgA-h2-ArQ"/>
+                            <constraint firstItem="qtt-lk-3RX" firstAttribute="bottom" secondItem="Yw5-QH-WoB" secondAttribute="bottom" constant="295" id="jqc-Yc-B7M"/>
+                            <constraint firstItem="ku7-ui-oga" firstAttribute="leading" secondItem="Yw5-QH-WoB" secondAttribute="leading" id="nrX-u4-SZY"/>
+                            <constraint firstItem="Zdl-eP-a28" firstAttribute="leading" secondItem="qtt-lk-3RX" secondAttribute="leading" constant="462" id="pEU-zf-elh"/>
+                            <constraint firstItem="Yw5-QH-WoB" firstAttribute="top" secondItem="eYS-Qw-Fpn" secondAttribute="top" id="xM5-d9-maS"/>
+                            <constraint firstItem="qtt-lk-3RX" firstAttribute="bottom" secondItem="duC-qK-n89" secondAttribute="bottom" constant="106" id="zvq-df-XKE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qtt-lk-3RX"/>
                     </view>
+                    <connections>
+                        <outlet property="black" destination="Yw5-QH-WoB" id="TAN-Co-L0q"/>
+                        <outlet property="green" destination="duC-qK-n89" id="Cn2-io-8RI"/>
+                        <outlet property="purple" destination="eYS-Qw-Fpn" id="hPj-sT-4Eh"/>
+                        <outlet property="red" destination="ku7-ui-oga" id="Bxf-Jh-9Mc"/>
+                        <segue destination="a4Q-qf-4xw" kind="unwind" identifier="goBack" unwindAction="toNextPlayerWithSegue:" id="sY1-Ju-29z"/>
+                        <segue destination="Dv9-6D-6lU" kind="show" identifier="startGame" id="bdb-3w-eYa"/>
+                        <segue destination="mtk-J6-lmK" kind="show" identifier="gotoNextPlayer" id="UZk-bT-G6G"/>
+                        <segue destination="a4Q-qf-4xw" kind="unwind" identifier="unwindToVC" unwindAction="unwindToVCWithSegue:" id="WRZ-A9-DWh"/>
+                        <segue destination="a4Q-qf-4xw" kind="unwind" identifier="toNextPlayer" unwindAction="toNextPlayerWithSegue:" id="ZiE-6P-ZoN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZ9-y3-b95" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="a4Q-qf-4xw" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-120.35139092240117" y="3.5156249999999996"/>
+            <point key="canvasLocation" x="-120.70312499999999" y="3.125"/>
         </scene>
         <!--Play-->
         <scene sceneID="eEK-18-QTQ">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Play" storyboardName="GameBoard" referencedIdentifier="Play" id="Dv9-6D-6lU" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="Play" storyboardName="GameBoard" referencedIdentifier="Play" id="Dv9-6D-6lU" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hZg-Hu-48j"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qqA-Fd-kKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="294" y="-45"/>
+            <point key="canvasLocation" x="282" y="213"/>
+        </scene>
+        <!--charDetailVC-->
+        <scene sceneID="2N8-kt-bRr">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlayerCharDetail" referencedIdentifier="charDetailVC" id="mtk-J6-lmK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="MPO-eo-VaW"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jaf-8I-hgl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-275" y="463"/>
         </scene>
     </scenes>
     <resources>

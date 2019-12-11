@@ -9,13 +9,24 @@
 import UIKit
 
 import Foundation
-
-class Board: NSObject {
+import UIKit
+class Board: UIViewController {
     
-    
-    
-    
+//    @IBOutlet weak var carImage: UIImageView!
+//    var newImage: UIImage!
+//
+    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        carImage.image = newImage
+    }
 }
+
+//class Board: NSObject {
+    
+    
+    
+    
+
 
 
 

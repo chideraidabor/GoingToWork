@@ -111,6 +111,8 @@
                         <segue destination="a4Q-qf-4xw" kind="unwind" identifier="goBack" unwindAction="toNextPlayerWithSegue:" id="sY1-Ju-29z"/>
                         <segue destination="Dv9-6D-6lU" kind="show" identifier="startGame" id="bdb-3w-eYa"/>
                         <segue destination="mtk-J6-lmK" kind="show" identifier="gotoNextPlayer" id="UZk-bT-G6G"/>
+                        <segue destination="a4Q-qf-4xw" kind="unwind" identifier="unwindToVC" unwindAction="unwindToVCWithSegue:" id="WRZ-A9-DWh"/>
+                        <segue destination="a4Q-qf-4xw" kind="unwind" identifier="toNextPlayer" unwindAction="toNextPlayerWithSegue:" id="ZiE-6P-ZoN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZ9-y3-b95" userLabel="First Responder" sceneMemberID="firstResponder"/>

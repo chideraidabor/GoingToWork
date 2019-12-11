@@ -56,7 +56,8 @@ extension PlayerPickerController: UIPickerViewDelegate, UIPickerViewDataSource{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "charDetail" {
                 let controller = segue.destination as! PlayerCharDetail
-            controller.noOfPlayer =  Int(myGame.numberOfPlayers)
+           // controller.noOfPlayer =  Int(myGame.numberOfPlayers)
+            controller.noOfPlayer = 2;
             //performSegue(withIdentifier: "charDetail", sender: self)
             }
         }

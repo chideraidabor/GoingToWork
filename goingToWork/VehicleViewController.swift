@@ -119,7 +119,9 @@ class VehicleViewController: UIViewController {
        @IBAction func playGameButton(_ sender: Any) {
         if (currPlayer<2){
             currPlayer+=1
-            performSegue(withIdentifier: "gotoNextPlayer", sender: self)
+            //performSegue(withIdentifier: "unwindToVC", sender: self)
+            performSegue(withIdentifier: "toNextPlayer", sender: self)
+            
         }
         else{
             performSegue(withIdentifier: "startGame", sender: self)
@@ -136,12 +138,12 @@ class VehicleViewController: UIViewController {
                let vc = segue.destination as! gameboardViewController
                //detailItem?.vehicleImage = blackCar.image
             }
-            if segue.identifier == "unwindSegueToVC" {
+            if segue.identifier == "unwindToVC" {
                 
             }
-            if segue.identifier == "gotoNextPlayer"{
+            if segue.identifier == "toNextPlayer"{
                 var vc = segue.destination as! PlayerCharDetailVC
-                vc.currPlayer = String(self.currPlayer)
+               vc.currentNoOfPlayer = self.currPlayer
                 
         }
        }

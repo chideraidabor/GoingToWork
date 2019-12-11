@@ -14,6 +14,7 @@ class gameboardViewController: UIViewController {
     
     var mySpaces = [Space]()
     
+    
     fileprivate func initializeGameSpacesOnScreen(_ mySpaces: inout [Space], boundingBox: CGRect) {
         
         let perfectBoundingBox = CGRect(x: 0, y: 0, width: 1194, height: 834)

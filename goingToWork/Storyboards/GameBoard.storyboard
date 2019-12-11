@@ -82,10 +82,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="H4F-l7-2CQ">
+                                <rect key="frame" x="582" y="532" width="150" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="1RI-Ti-AMX"/>
                     </view>
+                    <navigationItem key="navigationItem" id="W70-Jj-61S"/>
                     <connections>
                         <outlet property="FinalSpinner" destination="dbZ-1c-oI3" id="A0P-bv-38W"/>
                         <outlet property="syncContainer" destination="rzV-HX-Mhf" id="yC2-Kk-lcp"/>
@@ -95,13 +100,116 @@
             </objects>
             <point key="canvasLocation" x="-96.632503660322101" y="76.7578125"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="1Ec-1e-wBw">
+            <objects>
+                <viewController storyboardIdentifier="View2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="D8A-Kx-PId" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rik-zc-eg1">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select your Bottom ! " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJU-3I-yEo">
+                                <rect key="frame" x="336" y="77" width="695" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="79"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="female_chef_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Vw4-zQ-4sN">
+                                <rect key="frame" x="-121" y="-281" width="846" height="941"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="male_firefighter_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="7lu-Jt-XRW">
+                                <rect key="frame" x="20" y="34" width="918" height="882"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="male_police_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="mBx-Ob-sl3">
+                                <rect key="frame" x="265" y="-79" width="837" height="695"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="female_constructworker_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="KEA-ak-ilR">
+                                <rect key="frame" x="811" y="87" width="517" height="501"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="male_chef_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="YQH-Ro-uhY">
+                                <rect key="frame" x="224" y="-91" width="1318" height="1007"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="HtN-HL-Ez5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UXH-2P-SMz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-97" y="793"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Q7u-rQ-bFh">
+            <objects>
+                <viewController storyboardIdentifier="View3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zoK-Ce-Lio" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lE1-NE-F73">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="female_constructworker_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="HWV-Ac-Ngb">
+                                <rect key="frame" x="784" y="155" width="517" height="501"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="male_firefighter_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="Slx-ub-IJ7">
+                                <rect key="frame" x="-7" y="102" width="918" height="882"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select your Bottom ! " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5e-5n-mfd">
+                                <rect key="frame" x="309" y="145" width="695" height="125"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="79"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="female_chef_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="v5g-bj-LcI">
+                                <rect key="frame" x="-148" y="-213" width="846" height="941"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="male_chef_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="eTX-In-9ca">
+                                <rect key="frame" x="197" y="-23" width="1318" height="1007"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="male_police_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="dU2-08-dE9">
+                                <rect key="frame" x="238" y="-11" width="837" height="695"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTP-JH-x6J">
+                                <rect key="frame" x="20" y="29" width="194" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="&lt; Back To Game"/>
+                                <connections>
+                                    <segue destination="5Ap-OB-kCv" kind="show" id="WQN-An-RGz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="MJq-Oj-ycA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cFs-Zc-63P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="596" y="514"/>
+        </scene>
     </scenes>
     <resources>
         <image name="FinalSpinner" width="462" height="474"/>
         <image name="Game Board" width="3370" height="3391"/>
         <image name="arrow" width="560" height="560"/>
+        <image name="bottom" width="83" height="55"/>
         <image name="cutcutmania-professions-character09C" width="3600" height="3600"/>
         <image name="cutcutmania-professions-character11A" width="3600" height="3600"/>
         <image name="cutcutmania-professions-character14A" width="3600" height="3600"/>
+        <image name="female_chef_bottom" width="3600" height="3600"/>
+        <image name="female_constructworker_bottom" width="3600" height="3600"/>
+        <image name="male_chef_bottom" width="3600" height="3600"/>
+        <image name="male_firefighter_bottom" width="3600" height="3600"/>
+        <image name="male_police_bottom" width="3600" height="3600"/>
     </resources>
 </document>

@@ -8,9 +8,24 @@
 
 import UIKit
 
-class gameboardViewController: UIViewController {
+class gameboardViewController: UIViewController, UIViewControllerPreviewingDelegate {
+
+// This section of the code only has to do with the "PEEKandPRESS" functionality
+   //Shows preview VC for clothing selection screen
+   func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController?
+   {
+       let previewView = storyboard?.instantiateViewController(withIdentifier:"view2")
+       return previewView
+   }
+   
+   //Shows final VC For selecting clothing
+   func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController)
+   {
+       let finalView = storyboard?.instantiateViewController(withIdentifier:"view3")
+       show(finalView!, sender: self)
+   }
     
-    
+// This section of the code has to do with the spaces on the board only
     
     var mySpaces = [Space]()
     
@@ -180,6 +195,18 @@ class gameboardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+// The code below is checking to see if the device that the game is being simulated on is compatible with 3D touch software
+        if traitCollection.forceTouchCapability == UIForceTouchCapability.available
+               {
+                   registerForPreviewing(with: self, sourceView: view)
+               }
+               else
+               {
+                   print ("ISN'T COMPATIBLE")
+               }
+        
+        
         view.backgroundColor = .white
 
         /*let Space = UIView()

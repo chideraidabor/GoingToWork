@@ -61,7 +61,6 @@
                                         </state>
                                         <connections>
                                             <action selector="playGameButton:" destination="CKD-GB-khw" eventType="touchUpInside" id="Fhx-rB-B4i"/>
-                                            <segue destination="Dv9-6D-6lU" kind="show" identifier="toGameBoard" id="Edn-IT-rc5"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -109,7 +108,9 @@
                         <outlet property="green" destination="duC-qK-n89" id="Cn2-io-8RI"/>
                         <outlet property="purple" destination="eYS-Qw-Fpn" id="hPj-sT-4Eh"/>
                         <outlet property="red" destination="ku7-ui-oga" id="Bxf-Jh-9Mc"/>
-                        <segue destination="a4Q-qf-4xw" kind="unwind" identifier="unwindSegueToVC" unwindAction="unwindToVCWithSegue:" id="tQC-9b-EHc"/>
+                        <segue destination="a4Q-qf-4xw" kind="unwind" identifier="goBack" unwindAction="toNextPlayerWithSegue:" id="sY1-Ju-29z"/>
+                        <segue destination="Dv9-6D-6lU" kind="show" identifier="startGame" id="bdb-3w-eYa"/>
+                        <segue destination="mtk-J6-lmK" kind="show" identifier="gotoNextPlayer" id="UZk-bT-G6G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZ9-y3-b95" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -120,18 +121,22 @@
         <!--Play-->
         <scene sceneID="eEK-18-QTQ">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Play" storyboardName="GameBoard" referencedIdentifier="Play" id="Dv9-6D-6lU" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="Play" storyboardName="GameBoard" referencedIdentifier="Play" id="Dv9-6D-6lU" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hZg-Hu-48j"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qqA-Fd-kKK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="294" y="-45"/>
+            <point key="canvasLocation" x="282" y="213"/>
         </scene>
         <!--charDetailVC-->
         <scene sceneID="2N8-kt-bRr">
             <objects>
-                <viewControllerPlaceholder storyboardName="PlayerCharDetail" referencedIdentifier="charDetailVC" id="mtk-J6-lmK" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="PlayerCharDetail" referencedIdentifier="charDetailVC" id="mtk-J6-lmK" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="MPO-eo-VaW"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jaf-8I-hgl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-121" y="370"/>
+            <point key="canvasLocation" x="-275" y="463"/>
         </scene>
     </scenes>
     <resources>

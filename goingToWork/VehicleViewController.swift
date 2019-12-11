@@ -118,11 +118,11 @@ class VehicleViewController: UIViewController {
 
        @IBAction func playGameButton(_ sender: Any) {
         if (currPlayer<2){
-
-            performSegue(withIdentifier: "unwindSegueToVC", sender: self)
+            currPlayer+=1
+            performSegue(withIdentifier: "gotoNextPlayer", sender: self)
         }
         else{
-            performSegue(withIdentifier: "toGameBoard", sender: nil)
+            performSegue(withIdentifier: "startGame", sender: self)
         }
        }
        
@@ -132,13 +132,18 @@ class VehicleViewController: UIViewController {
     }
     
        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "toGameBoard" {
+            if segue.identifier == "startGame" {
                let vc = segue.destination as! gameboardViewController
                //detailItem?.vehicleImage = blackCar.image
             }
-            if segue.identifier == "loopTwice" {
-               
+            if segue.identifier == "unwindSegueToVC" {
+                
             }
+            if segue.identifier == "gotoNextPlayer"{
+                var vc = segue.destination as! PlayerCharDetailVC
+                vc.currPlayer = String(self.currPlayer)
+                
+        }
        }
     
     

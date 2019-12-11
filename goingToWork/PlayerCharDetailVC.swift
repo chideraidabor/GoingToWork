@@ -11,14 +11,20 @@ import UIKit
 class PlayerCharDetailVC: UIViewController {
     var chartype: Int = 0;
     var noOfPlayer = 2
-    var currentNoPlayer = 1
+    var currentNoOfPlayer = 0
+    var currPlayer: String = ""
+    let defaultnoPlayer = 1
+    
     
     var playerSelectorVC: PlayerPickerController?
     var job: String  = "none"
     
      
     @IBAction func unwindToVC(segue:UIStoryboardSegue) {
-        currentNoPlayer+=1
+        
+    }
+    @IBAction func toNextPlayer(segue:UIStoryboardSegue){
+        currentNoOfPlayer+=1
     }
     
     //Outlet for each option selected
@@ -56,9 +62,22 @@ class PlayerCharDetailVC: UIViewController {
     
     override func viewDidLoad(){
         //noOfPlayers =  PlayerPickerController.noOfPlayers
+       // currentNoPlayer=1
+        super.viewDidLoad()
+        print(currPlayer)
+        
+            
+        if (currPlayer==""){
+             currentNoOfPlayer =  defaultnoPlayer
+        }
+        else{
+            currentNoOfPlayer=Int(currPlayer)!
+        }
        
+        
+        
       //  for i in 1...noOfPlayer {
-            super.viewDidLoad()
+            
            // PlayerNumber.text = "Player" + String(i) + " please select your character"
        
             
@@ -228,7 +247,9 @@ class PlayerCharDetailVC: UIViewController {
         if segue.destination is VehicleViewController{
         
             let vc = segue.destination as? VehicleViewController
-            vc?.currPlayer = currentNoPlayer
+            
+            vc?.currPlayer = currentNoOfPlayer
+            
          
         }
     //ref: learnappmaking.com (pass data vc)

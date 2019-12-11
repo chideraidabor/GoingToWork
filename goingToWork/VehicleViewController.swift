@@ -11,9 +11,15 @@ import UIKit
 class VehicleViewController: UIViewController {
     
     var defaultImageStrings: [String] = ["BlackCar.png"]
-     var myCars: [UIImageView] = []
+    var myCars: [UIImageView] = []
     var currPlayer = 1
      
+    @IBOutlet weak var black: UIButton!
+    @IBOutlet weak var green: UIButton!
+    @IBOutlet weak var red: UIButton!
+    @IBOutlet weak var purple: UIButton!
+    
+    
      override func viewDidLoad() {
 
          let tapGesture = UITapGestureRecognizer(target: self, action: #selector(VehicleViewController.didTap(sender:)))
@@ -34,27 +40,6 @@ class VehicleViewController: UIViewController {
          }
      }
 
-//
-//    @IBAction func pickCar(sender: AnyObject) {
-//        addNewCar()
-//    }
-//
-//    func addNewCar() {
-//        let picker = UIImagePickerController()
-//        picker.allowsEditing = true
-//        picker.delegate = self as! UIImagePickerControllerDelegate & UINavigationControllerDelegate
-//        //Vehicle(picker, animated: true, completion: nil)
-//    }
-//
-//    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage!, editingInfo: [NSObject : AnyObject]!) {
-//        //postingImage.image = image
-//        self.dismiss(animated: true, completion: nil)
-//    }
-//
-    @IBOutlet weak var black: UIButton!
-    @IBOutlet weak var green: UIButton!
-    @IBOutlet weak var red: UIButton!
-    @IBOutlet weak var purple: UIButton!
     
     fileprivate func selectCar(_ sender: UIButton) {
         sender.isSelected = true
@@ -116,19 +101,17 @@ class VehicleViewController: UIViewController {
            }
        }
 
-       @IBAction func playGameButton(_ sender: Any) {
-        if (currPlayer<2){
-
+    @IBAction func playGameButton(_ sender: Any) {
+        if (currPlayer < 2){
             performSegue(withIdentifier: "unwindSegueToVC", sender: self)
         }
-        else{
+        else {
             performSegue(withIdentifier: "toGameBoard", sender: nil)
         }
-       }
+    }
        
     
     @IBAction func goBackToOneButton(_ sender: Any) {
-        
     }
     
        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -137,15 +120,10 @@ class VehicleViewController: UIViewController {
                //detailItem?.vehicleImage = blackCar.image
             }
             if segue.identifier == "loopTwice" {
-               
             }
        }
     
     
-
-      
-        
- 
 //       var detailItem: Player? {
 //           didSet {
 //               // Update the view.

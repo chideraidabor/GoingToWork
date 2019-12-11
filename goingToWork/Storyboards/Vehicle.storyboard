@@ -18,7 +18,7 @@
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Choose your vehicle" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fDE-DB-4Hp">
                                 <rect key="frame" x="304" y="116" width="416" height="63.5"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -78,7 +78,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="fDE-DB-4Hp" firstAttribute="leading" secondItem="qtt-lk-3RX" secondAttribute="leading" constant="304" id="3H9-EU-j5L"/>
                             <constraint firstItem="duC-qK-n89" firstAttribute="leading" secondItem="QSr-sr-YpO" secondAttribute="trailing" constant="31" id="BY2-iw-1EJ"/>

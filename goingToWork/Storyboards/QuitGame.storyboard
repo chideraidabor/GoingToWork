@@ -11,7 +11,7 @@
         <!--QuitGame-->
         <scene sceneID="GcH-3K-HQL">
             <objects>
-                <viewController storyboardIdentifier="QuitGame" title="QuitGame" id="b8W-4y-NAV" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="QuitGame" title="QuitGame" modalPresentationStyle="fullScreen" id="b8W-4y-NAV" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TIf-SR-AhZ">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

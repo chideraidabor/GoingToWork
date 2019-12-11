@@ -11,7 +11,7 @@
         <!--InGameInstructions-->
         <scene sceneID="vNc-Qp-LmT">
             <objects>
-                <viewController storyboardIdentifier="InGameInstructions" title="InGameInstructions" id="iW7-1r-Z7M" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InGameInstructions" title="InGameInstructions" modalPresentationStyle="fullScreen" id="iW7-1r-Z7M" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q5o-4A-CXH">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

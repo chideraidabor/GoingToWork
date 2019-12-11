@@ -11,13 +11,13 @@
         <!--ArtistCredits-->
         <scene sceneID="d9J-W6-98t">
             <objects>
-                <viewController title="ArtistCredits" id="7wp-fi-5de" sceneMemberID="viewController">
+                <viewController title="ArtistCredits" modalPresentationStyle="fullScreen" id="7wp-fi-5de" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yek-Pb-2vU">
                         <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XbK-vJ-aGT">
-                                <rect key="frame" x="271" y="169" width="653" height="540"/>
+                                <rect key="frame" x="271" y="169" width="653" height="587"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">People pictures: 
 Name: Nando Alam
@@ -33,7 +33,7 @@ Location: Livingston, United Kingdom</string>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3J-c0-7LQ">
-                                <rect key="frame" x="20" y="36" width="150" height="55"/>
+                                <rect key="frame" x="20" y="36" width="150" height="102"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="78" id="BDx-zv-hT0"/>

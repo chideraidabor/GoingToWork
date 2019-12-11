@@ -37,7 +37,7 @@
         <!--PauseMenu-->
         <scene sceneID="I4G-bU-tsv">
             <objects>
-                <viewController storyboardIdentifier="PauseMenu" title="PauseMenu" id="i6g-Bh-MmT" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PauseMenu" title="PauseMenu" modalPresentationStyle="fullScreen" id="i6g-Bh-MmT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AI8-Fu-lod">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

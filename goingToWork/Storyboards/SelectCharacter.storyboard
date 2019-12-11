@@ -12,7 +12,7 @@
         <!--SelectCharacter-->
         <scene sceneID="7N4-bZ-XMQ">
             <objects>
-                <viewController title="SelectCharacter" id="ZZW-6U-3pE" sceneMemberID="viewController">
+                <viewController title="SelectCharacter" modalPresentationStyle="fullScreen" id="ZZW-6U-3pE" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Sn-bE-IwB">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

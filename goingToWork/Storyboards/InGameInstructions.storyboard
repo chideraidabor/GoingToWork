@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iW7-1r-Z7M">
+    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--InGameInstructions-->
+        <scene sceneID="vNc-Qp-LmT">
+            <objects>
+                <viewController storyboardIdentifier="InGameInstructions" title="InGameInstructions" modalPresentationStyle="fullScreen" id="iW7-1r-Z7M" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q5o-4A-CXH">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B3f-A9-FX9">
+                                <rect key="frame" x="20" y="24" width="984" height="1322"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="q9d-sr-PqM">
+                                        <rect key="frame" x="0.0" y="28" width="976" height="847"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Object of the Game:
+
+•	You will go on a road trip to get to work. 
+
+•	You will earn pieces of your Community Worker uniform along the way when you land on a Top, Bottom, or Hat space.
+
+•	When you earn all of the uniform items you get to move your car the end of the road, the last space which is your workplace. 
+
+•	Now that you have your uniform you can start your workday. You successfully completed your journey and arrived at work!
+
+Directions:
+
+•	Each child will choose a Community Worker that they want to be for the game. 
+
+•	Each child will choose a player piece Car to move along on the road to get to work.
+
+
+•	The Car will start at Home space to begin the game. 
+
+•	The first person will spin the wheel. Follow the directions of that section which the arrow lands upon. You will move a number of spaces forward or follow the specific directions.
+
+
+•	When the child lands on Top, Bottom, or Hat collect those pieces of the uniform.  
+
+•	You may land on a space that is a Local Business. Hang out there until your next turn.
+
+
+•	Or if you land on a Top, Bottom, or Hat Uniform space and you have that one already, you wait for your next turn. 
+
+•	Each child will take a turn until one player gets their whole uniform. That player goes to the end space, which is their workplace. They win the game and can start their work day!</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZER-Ho-jP4">
+                                        <rect key="frame" x="8" y="883" width="346" height="84"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <state key="normal" title="Back to Menu">
+                                            <color key="titleColor" red="1" green="0.03624573524" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="jCt-7c-TVa" kind="show" id="q6C-fR-ivY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMh-6z-UcJ">
+                                        <rect key="frame" x="612" y="882" width="372" height="84"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <state key="normal" title="Resume Game"/>
+                                        <connections>
+                                            <segue destination="Izv-1X-ggI" kind="show" id="cg9-Ms-WD6"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="WFA-NY-RE9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uTs-Ir-cr8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="163.4765625" y="99.707174231332345"/>
+        </scene>
+        <!--PauseMenu-->
+        <scene sceneID="mTF-7o-sNY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PauseMenu" id="jCt-7c-TVa" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="azU-15-J1R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="546" y="-137"/>
+        </scene>
+        <!--GameBoard-->
+        <scene sceneID="0Hi-Fa-mC7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GameBoard" id="Izv-1X-ggI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="82c-Ku-1FU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="545" y="-105"/>
+        </scene>
+    </scenes>
+</document>

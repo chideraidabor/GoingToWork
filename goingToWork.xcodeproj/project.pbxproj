@@ -16,6 +16,8 @@
 		675431D2236643D70004EF25 /* 9A1E4006134A4F7E8031723821238143.png in Resources */ = {isa = PBXBuildFile; fileRef = 675431D1236643D60004EF25 /* 9A1E4006134A4F7E8031723821238143.png */; };
 		677E88BD236F6B270058F086 /* selectNoPlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 677E88BC236F6B270058F086 /* selectNoPlayer.storyboard */; };
 		928E3FA6239857B000935991 /* PlayerCharDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928E3FA5239857B000935991 /* PlayerCharDetail.swift */; };
+		AB684D9023A14E4000ABA8F4 /* PauseMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB684D8F23A14E4000ABA8F4 /* PauseMenu.storyboard */; };
+		AB684D9223A1582B00ABA8F4 /* PauseMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB684D9123A1582B00ABA8F4 /* PauseMenuVC.swift */; };
 		ABCCC8D723662FFC002463E3 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCCC8D623662FFC002463E3 /* Board.swift */; };
 		ABCCC8D923663012002463E3 /* PlayerPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCCC8D823663012002463E3 /* PlayerPickerController.swift */; };
 		B899219B235E468C00EDB8AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B899219A235E468C00EDB8AF /* AppDelegate.swift */; };
@@ -27,6 +29,8 @@
 		B89921BE235E468D00EDB8AF /* goingToWorkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89921BD235E468D00EDB8AF /* goingToWorkUITests.swift */; };
 		CA16A09A237CA7F800BAF68D /* gameboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA16A099237CA7F800BAF68D /* gameboardViewController.swift */; };
 		CA3C118F23736D59006D6F95 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3C118E23736D59006D6F95 /* Space.swift */; };
+		CA8292F523A1646500E14BEB /* QuitGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8292F423A1646500E14BEB /* QuitGame.storyboard */; };
+		CA8292F723A165AF00E14BEB /* InGameInstructions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA8292F623A165AF00E14BEB /* InGameInstructions.storyboard */; };
 		E961BDF02370C251006D383E /* GameInstructions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E961BDEF2370C251006D383E /* GameInstructions.storyboard */; };
 		E961BE2F2370D146006D383E /* GameInstructionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E961BE2E2370D146006D383E /* GameInstructionsVC.swift */; };
 		E9701E992379FCDF00336EBF /* ArtistCredits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9701E982379FCDF00336EBF /* ArtistCredits.storyboard */; };
@@ -64,6 +68,8 @@
 		675431D1236643D60004EF25 /* 9A1E4006134A4F7E8031723821238143.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9A1E4006134A4F7E8031723821238143.png; sourceTree = "<group>"; };
 		677E88BC236F6B270058F086 /* selectNoPlayer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = selectNoPlayer.storyboard; sourceTree = "<group>"; };
 		928E3FA5239857B000935991 /* PlayerCharDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCharDetail.swift; sourceTree = "<group>"; };
+		AB684D8F23A14E4000ABA8F4 /* PauseMenu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PauseMenu.storyboard; sourceTree = "<group>"; };
+		AB684D9123A1582B00ABA8F4 /* PauseMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseMenuVC.swift; sourceTree = "<group>"; };
 		ABCCC8D623662FFC002463E3 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		ABCCC8D823663012002463E3 /* PlayerPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPickerController.swift; sourceTree = "<group>"; };
 		B8992197235E468C00EDB8AF /* goingToWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = goingToWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +87,8 @@
 		B89921BF235E468D00EDB8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA16A099237CA7F800BAF68D /* gameboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gameboardViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		CA3C118E23736D59006D6F95 /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
+		CA8292F423A1646500E14BEB /* QuitGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuitGame.storyboard; sourceTree = "<group>"; };
+		CA8292F623A165AF00E14BEB /* InGameInstructions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InGameInstructions.storyboard; sourceTree = "<group>"; };
 		E961BDEF2370C251006D383E /* GameInstructions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameInstructions.storyboard; sourceTree = "<group>"; };
 		E961BE2E2370D146006D383E /* GameInstructionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameInstructionsVC.swift; sourceTree = "<group>"; };
 		E9701E982379FCDF00336EBF /* ArtistCredits.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ArtistCredits.storyboard; sourceTree = "<group>"; };
@@ -120,9 +128,12 @@
 				B89921A6235E468D00EDB8AF /* LaunchScreen.storyboard */,
 				16CDE42523736F4500299EA6 /* Main.storyboard */,
 				50F591262368F1EE00DCFC63 /* GameBoard.storyboard */,
+				AB684D8F23A14E4000ABA8F4 /* PauseMenu.storyboard */,
+				CA8292F423A1646500E14BEB /* QuitGame.storyboard */,
+				CA8292F623A165AF00E14BEB /* InGameInstructions.storyboard */,
+				E961BDEF2370C251006D383E /* GameInstructions.storyboard */,
 				677E88BC236F6B270058F086 /* selectNoPlayer.storyboard */,
 				503EFE2A236F68AB000BD5B0 /* Vehicle.storyboard */,
-				E961BDEF2370C251006D383E /* GameInstructions.storyboard */,
 				16CB46A6236783F2007A87C6 /* PlayerCharDetail.storyboard */,
 				E9701E982379FCDF00336EBF /* ArtistCredits.storyboard */,
 				163F380B238B58BB00F7F48B /* SelectCharacter.storyboard */,
@@ -157,6 +168,7 @@
 				50F591252368F15B00DCFC63 /* Storyboards */,
 				B899219A235E468C00EDB8AF /* AppDelegate.swift */,
 				CA16A099237CA7F800BAF68D /* gameboardViewController.swift */,
+				AB684D9123A1582B00ABA8F4 /* PauseMenuVC.swift */,
 				CA3C118E23736D59006D6F95 /* Space.swift */,
 				ABCCC8D623662FFC002463E3 /* Board.swift */,
 				1654B3F42393197B00610F54 /* PlayerCharDetailVC.swift */,
@@ -298,6 +310,9 @@
 			files = (
 				E9701E992379FCDF00336EBF /* ArtistCredits.storyboard in Resources */,
 				675431D2236643D70004EF25 /* 9A1E4006134A4F7E8031723821238143.png in Resources */,
+				CA8292F723A165AF00E14BEB /* InGameInstructions.storyboard in Resources */,
+				AB684D9023A14E4000ABA8F4 /* PauseMenu.storyboard in Resources */,
+				CA8292F523A1646500E14BEB /* QuitGame.storyboard in Resources */,
 				677E88BD236F6B270058F086 /* selectNoPlayer.storyboard in Resources */,
 				50F591272368F1EE00DCFC63 /* GameBoard.storyboard in Resources */,
 				16CB46A8236783F2007A87C6 /* PlayerCharDetail.storyboard in Resources */,
@@ -339,6 +354,7 @@
 				B899219D235E468C00EDB8AF /* gameboardViewController.swift in Sources */,
 				B899219B235E468C00EDB8AF /* AppDelegate.swift in Sources */,
 				CA3C118F23736D59006D6F95 /* Space.swift in Sources */,
+				AB684D9223A1582B00ABA8F4 /* PauseMenuVC.swift in Sources */,
 				ABCCC8D723662FFC002463E3 /* Board.swift in Sources */,
 				ABCCC8D923663012002463E3 /* PlayerPickerController.swift in Sources */,
 				928E3FA6239857B000935991 /* PlayerCharDetail.swift in Sources */,

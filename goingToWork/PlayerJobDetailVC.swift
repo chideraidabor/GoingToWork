@@ -1,8 +1,8 @@
 //
-//  Vehicle.swift
+//  PlayerJobDetailVC.swift
 //  goingToWork
 //
-//  Created by Jeremiah Brennin on 11/8/19.
+//  Created by Mary Kutschke on 12/10/19.
 //  Copyright © 2019 Gannon University. All rights reserved.
 //
 

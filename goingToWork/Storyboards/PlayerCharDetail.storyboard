@@ -3,113 +3,105 @@
     <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--charDetailScreen-->
+        <!--charDetailVC-->
         <scene sceneID="GvN-Kh-cFc">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="charDetailScreen" storyboardName="PlayerCharDetail" referencedIdentifier="charDetailScreen" id="L9j-2p-KCb" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="charDetailScreen" storyboardName="PlayerCharDetail" referencedIdentifier="charDetailVC" id="L9j-2p-KCb" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1SB-QG-5mG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18" y="-340"/>
+            <point key="canvasLocation" x="-8" y="-509"/>
         </scene>
-        <!--View Controller-->
+        <!--Player Char DetailVC-->
         <scene sceneID="DDR-E7-zNP">
             <objects>
-                <viewController storyboardIdentifier="charDetailVC" modalPresentationStyle="fullScreen" id="61c-Is-6tQ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="charDetailVC" modalPresentationStyle="fullScreen" id="61c-Is-6tQ" customClass="PlayerCharDetailVC" customModule="goingToWork" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EDh-us-5Aw">
                         <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="wIo-oX-GLE">
-                                <rect key="frame" x="67" y="163" width="1060" height="393"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPu-wa-0yC">
+                                <rect key="frame" x="299" y="35" width="675" height="48"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="52" translatesAutoresizingMaskIntoConstraints="NO" id="Usv-rp-HgN">
-                                        <rect key="frame" x="0.0" y="0.0" width="716" height="393"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="475" translatesAutoresizingMaskIntoConstraints="NO" id="a5P-gW-sFk">
-                                                <rect key="frame" x="0.0" y="0.0" width="716" height="36"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lfc-2R-usy">
-                                                        <rect key="frame" x="0.0" y="0.0" width="209" height="36"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ULY-mF-1yj">
-                                                        <rect key="frame" x="684" y="0.0" width="32" height="36"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="206" translatesAutoresizingMaskIntoConstraints="NO" id="pdy-27-bf0">
-                                                <rect key="frame" x="0.0" y="88" width="716" height="217"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Select your job" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kwO-OL-eqp">
-                                                        <rect key="frame" x="0.0" y="90.5" width="190" height="36"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ilI-2Y-yWo">
-                                                        <rect key="frame" x="396" y="0.5" width="320" height="216"/>
-                                                    </pickerView>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="347" translatesAutoresizingMaskIntoConstraints="NO" id="Hv7-Sd-hJN">
-                                                <rect key="frame" x="0.0" y="357" width="716" height="36"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your gender" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTY-Bh-yQb">
-                                                        <rect key="frame" x="0.0" y="0.0" width="242" height="36"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bji-2v-cPq">
-                                                        <rect key="frame" x="589" y="0.0" width="127" height="37"/>
-                                                        <segments>
-                                                            <segment title="Male"/>
-                                                            <segment title="Female"/>
-                                                        </segments>
-                                                    </segmentedControl>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="iep-7J-Mrr">
-                                        <rect key="frame" x="725" y="0.0" width="335" height="393"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hAv-Am-Qcy" customClass="CharacterImage">
-                                                <rect key="frame" x="0.0" y="0.0" width="335" height="393"/>
-                                            </imageView>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rPu-wa-0yC">
-                                <rect key="frame" x="499" y="35" width="196" height="67"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0P-6p-ZGr">
-                                        <rect key="frame" x="0.0" y="0.0" width="196" height="67"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="56"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Player, select your character" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jic-Vt-x8i" userLabel="Select your character">
+                                        <rect key="frame" x="0.0" y="0.0" width="581" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nw5-Qi-dyd" userLabel="charSelected">
+                                        <rect key="frame" x="581" y="0.0" width="94" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NBm-5g-Haa">
-                                <rect key="frame" x="535" y="651" width="124" height="55"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="wIo-oX-GLE">
+                                <rect key="frame" x="67" y="226" width="1060" height="362"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duC-hR-gGt">
-                                        <rect key="frame" x="0.0" y="0.0" width="124" height="55"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sD-G8-WjU">
+                                        <rect key="frame" x="0.0" y="0.0" width="169" height="362"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <state key="normal" title="Button" image="male_generic1"/>
+                                        <connections>
+                                            <action selector="selectChar1:" destination="61c-Is-6tQ" eventType="touchUpInside" id="17a-he-6aX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R37-Ys-UD0">
+                                        <rect key="frame" x="178" y="0.0" width="169.5" height="362"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <state key="normal" title="Button" image="male_generic2"/>
+                                        <connections>
+                                            <action selector="selectChar2:" destination="61c-Is-6tQ" eventType="touchUpInside" id="NeX-Uf-qnq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EnY-rX-mNK">
+                                        <rect key="frame" x="356.5" y="0.0" width="169" height="362"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <state key="normal" title="Button" image="male_generic3"/>
+                                        <connections>
+                                            <action selector="selectChar3:" destination="61c-Is-6tQ" eventType="touchUpInside" id="fwo-Ll-RzP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4pA-dJ-egX">
+                                        <rect key="frame" x="534.5" y="0.0" width="169" height="362"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <state key="normal" title="Button" image="female_generic1"/>
+                                        <connections>
+                                            <action selector="selectChar4:" destination="61c-Is-6tQ" eventType="touchUpInside" id="mhY-GI-T1k"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="td5-Fb-i6Z">
+                                        <rect key="frame" x="712.5" y="0.0" width="169.5" height="362"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <state key="normal" title="Button" image="female_generic2"/>
+                                        <connections>
+                                            <action selector="selectChar5:" destination="61c-Is-6tQ" eventType="touchUpInside" id="KM4-Fl-cRP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeA-KV-Wu4">
+                                        <rect key="frame" x="891" y="0.0" width="169" height="362"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <state key="normal" title="Button" image="female_generic3"/>
+                                        <connections>
+                                            <action selector="selectChar6:" destination="61c-Is-6tQ" eventType="touchUpInside" id="tcc-Q3-JFj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NBm-5g-Haa">
+                                <rect key="frame" x="569.5" y="676" width="55" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVe-Xz-vYE">
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="30"/>
                                         <state key="normal" title="Confirm"/>
                                         <connections>
-                                            <segue destination="97k-MM-wyH" kind="show" id="riS-9t-MTE"/>
+                                            <segue destination="avJ-aR-3Qz" kind="show" identifier="JobSelect" id="Iuo-fe-t75"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -120,14 +112,26 @@
                             <constraint firstItem="NBm-5g-Haa" firstAttribute="centerX" secondItem="DbG-bP-YpR" secondAttribute="centerX" id="Dv1-YO-4rn"/>
                             <constraint firstItem="wIo-oX-GLE" firstAttribute="leading" secondItem="DbG-bP-YpR" secondAttribute="leading" constant="67" id="EZB-2p-F9G"/>
                             <constraint firstItem="wIo-oX-GLE" firstAttribute="centerX" secondItem="DbG-bP-YpR" secondAttribute="centerX" id="HxW-E6-hHk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rPu-wa-0yC" secondAttribute="trailing" constant="200" id="KFR-fg-HyG"/>
                             <constraint firstItem="DbG-bP-YpR" firstAttribute="trailing" secondItem="wIo-oX-GLE" secondAttribute="trailing" constant="67" id="Lkq-S3-2RQ"/>
-                            <constraint firstItem="wIo-oX-GLE" firstAttribute="centerY" secondItem="DbG-bP-YpR" secondAttribute="centerY" constant="-47.5" id="Rxm-mQ-TCX"/>
+                            <constraint firstItem="wIo-oX-GLE" firstAttribute="top" secondItem="EDh-us-5Aw" secondAttribute="bottom" constant="-608" id="QAf-Cd-xqo"/>
+                            <constraint firstItem="wIo-oX-GLE" firstAttribute="centerY" secondItem="DbG-bP-YpR" secondAttribute="centerY" id="Rxm-mQ-TCX"/>
+                            <constraint firstItem="rPu-wa-0yC" firstAttribute="leading" secondItem="EDh-us-5Aw" secondAttribute="leading" constant="299" id="Xa8-Up-BpF"/>
                             <constraint firstItem="DbG-bP-YpR" firstAttribute="bottom" secondItem="NBm-5g-Haa" secondAttribute="bottom" constant="108" id="YYa-gg-BOa"/>
                             <constraint firstItem="rPu-wa-0yC" firstAttribute="top" secondItem="DbG-bP-YpR" secondAttribute="top" constant="35" id="eaW-1D-oEo"/>
-                            <constraint firstItem="rPu-wa-0yC" firstAttribute="centerX" secondItem="DbG-bP-YpR" secondAttribute="centerX" id="ln0-i1-K5g"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DbG-bP-YpR"/>
                     </view>
+                    <connections>
+                        <outlet property="PlayerNumber" destination="jic-Vt-x8i" id="F8y-ko-BCP"/>
+                        <outlet property="char1" destination="6sD-G8-WjU" id="CbA-LZ-Yej"/>
+                        <outlet property="char2" destination="R37-Ys-UD0" id="gkD-fI-NYv"/>
+                        <outlet property="char3" destination="EnY-rX-mNK" id="1uE-lx-0ET"/>
+                        <outlet property="char4" destination="4pA-dJ-egX" id="1zr-3B-bjf"/>
+                        <outlet property="char5" destination="td5-Fb-i6Z" id="gXO-vH-3Pw"/>
+                        <outlet property="char6" destination="XeA-KV-Wu4" id="Vob-kU-gfk"/>
+                        <outlet property="charSelected" destination="nw5-Qi-dyd" id="qLF-Aa-uPC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6bV-Gf-Ae0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -141,7 +145,25 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kKq-3r-mwb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="134" y="437"/>
+            <point key="canvasLocation" x="660" y="404"/>
+        </scene>
+        <!--JobSelect-->
+        <scene sceneID="yCV-JW-pr1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlayerJobSelect" referencedIdentifier="JobSelect" id="avJ-aR-3Qz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gCy-pM-QRA"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kKU-Yk-lvK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="637" y="28"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="female_generic1" width="3600" height="3600"/>
+        <image name="female_generic2" width="3600" height="3600"/>
+        <image name="female_generic3" width="3600" height="3600"/>
+        <image name="male_generic1" width="3600" height="3600"/>
+        <image name="male_generic2" width="3600" height="3600"/>
+        <image name="male_generic3" width="3600" height="3600"/>
+    </resources>
 </document>

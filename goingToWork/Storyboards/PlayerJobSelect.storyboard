@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Player Char DetailVC-->
+        <scene sceneID="pPD-hL-WDN">
+            <objects>
+                <viewController storyboardIdentifier="JobSelect" modalPresentationStyle="fullScreen" id="aKt-Kh-AzE" customClass="PlayerCharDetailVC" customModule="goingToWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mdz-Me-qxp">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duC-hR-gGt">
+                                <rect key="frame" x="535" y="669" width="124" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="Confirm"/>
+                                <connections>
+                                    <segue destination="97k-MM-wyH" kind="show" id="riS-9t-MTE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xao-F4-kkh">
+                                <rect key="frame" x="0.0" y="298" width="241" height="239"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="female_firefighter_hat"/>
+                                <connections>
+                                    <action selector="firefighterSelect:" destination="aKt-Kh-AzE" eventType="touchUpInside" id="BOM-Xp-HQs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjY-dm-MGK">
+                                <rect key="frame" x="306" y="298" width="241" height="239"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="female_chef_hat"/>
+                                <connections>
+                                    <action selector="chefSelect:" destination="aKt-Kh-AzE" eventType="touchUpInside" id="QSU-yS-w4G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zmQ-Cd-GnF">
+                                <rect key="frame" x="592" y="296" width="241" height="239"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="female_constructworker_hat"/>
+                                <connections>
+                                    <action selector="constructionWorkerSelect:" destination="aKt-Kh-AzE" eventType="touchUpInside" id="M8I-J2-Kla"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRH-Tx-guo">
+                                <rect key="frame" x="906" y="296" width="241" height="239"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="female_police_hat"/>
+                                <connections>
+                                    <action selector="policeOfficerSelect:" destination="aKt-Kh-AzE" eventType="touchUpInside" id="b5h-Pz-Rzy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player, select your job" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlz-EI-IpU">
+                                <rect key="frame" x="379" y="99" width="278" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xrz-BJ-k31">
+                                <rect key="frame" x="691" y="99" width="313" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="cYC-H2-2X8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BVT-ya-dxE"/>
+                    <connections>
+                        <outlet property="ConstructionWorkJob" destination="zmQ-Cd-GnF" id="eUu-jR-GbZ"/>
+                        <outlet property="chefJob" destination="bjY-dm-MGK" id="bHH-pq-e6A"/>
+                        <outlet property="firefighterJob" destination="xao-F4-kkh" id="9xw-MJ-PeU"/>
+                        <outlet property="jobSelected" destination="Xrz-BJ-k31" id="eMq-2W-DU8"/>
+                        <outlet property="policeOfficerJob" destination="LRH-Tx-guo" id="Pnj-zF-8Pc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OcN-gX-vzm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636.9140625" y="27.34375"/>
+        </scene>
+        <!--Vehicle-->
+        <scene sceneID="QTp-aX-Ffi">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Vehicle" referencedIdentifier="Vehicle" id="97k-MM-wyH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dSn-Hb-e2y"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kKq-3r-mwb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="792" y="450"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="female_chef_hat" width="3600" height="3600"/>
+        <image name="female_constructworker_hat" width="3600" height="3600"/>
+        <image name="female_firefighter_hat" width="3600" height="3600"/>
+        <image name="female_police_hat" width="3600" height="3600"/>
+    </resources>
+</document>

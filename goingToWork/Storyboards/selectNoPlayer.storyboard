@@ -24,6 +24,7 @@
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="o2F-6r-V7X">
                                 <rect key="frame" x="313" y="94" width="533.5" height="532.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Before we begin..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40f-cg-79h">
                                         <rect key="frame" x="95.5" y="0.0" width="342.5" height="55"/>
@@ -55,7 +56,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.74374872446060181" green="0.36271297931671143" blue="0.13681253790855408" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="tf1-iB-78K" firstAttribute="leading" secondItem="r4w-eB-Cbr" secondAttribute="leading" constant="46" id="2Xn-C3-Hix"/>
                             <constraint firstItem="Y5A-4h-5SW" firstAttribute="top" secondItem="r4w-eB-Cbr" secondAttribute="top" constant="224" id="3Dq-Pf-ya1"/>

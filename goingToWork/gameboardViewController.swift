@@ -10,11 +10,9 @@ import UIKit
 
 class gameboardViewController: UIViewController {
     
+    var mySpaces = [spaceWithPlayers]()
     
-    
-    var mySpaces = [Space]()
-    
-    fileprivate func initializeGameSpacesOnScreen(_ mySpaces: inout [Space], boundingBox: CGRect) {
+    fileprivate func initializeGameSpacesOnScreen(_ mySpaces: inout [spaceWithPlayers], boundingBox: CGRect) {
         
         let perfectBoundingBox = CGRect(x: 0, y: 0, width: 1194, height: 834)
         
@@ -131,38 +129,36 @@ class gameboardViewController: UIViewController {
         
         
        
-        mySpaces.append(rectangle1)
-        mySpaces.append(rectangle2)
-        mySpaces.append(rectangle3)
-        mySpaces.append(rectangle4)
-        mySpaces.append(rectangle5)
-        mySpaces.append(rectangle6)
-        mySpaces.append(rectangle7)
-        mySpaces.append(rectangle8)
-        mySpaces.append(rectangle9)
-        mySpaces.append(rectangle10)
-        mySpaces.append(rectangle11)
-        mySpaces.append(rectangle12)
-        mySpaces.append(rectangle13)
-        mySpaces.append(rectangle14)
-        mySpaces.append(rectangle15)
-        mySpaces.append(rectangle16)
-        mySpaces.append(rectangle17)
-        mySpaces.append(rectangle18)
-        mySpaces.append(rectangle19)
-        mySpaces.append(rectangle20)
-        mySpaces.append(rectangle21)
-        mySpaces.append(rectangle22)
-        mySpaces.append(rectangle23)
-        mySpaces.append(rectangle24)
-        mySpaces.append(rectangle25)
-        mySpaces.append(rectangle26)
-        mySpaces.append(rectangle27)
-        mySpaces.append(rectangle28)
-        mySpaces.append(rectangle29)
-        mySpaces.append(rectangle30)
-        
-       
+        mySpaces.append(rectangle1 as! spaceWithPlayers)
+        mySpaces.append(rectangle2 as! spaceWithPlayers)
+        mySpaces.append(rectangle3 as! spaceWithPlayers)
+        mySpaces.append(rectangle4 as! spaceWithPlayers)
+        mySpaces.append(rectangle5 as! spaceWithPlayers)
+        mySpaces.append(rectangle6 as! spaceWithPlayers)
+        mySpaces.append(rectangle7 as! spaceWithPlayers)
+        mySpaces.append(rectangle8 as! spaceWithPlayers)
+        mySpaces.append(rectangle9 as! spaceWithPlayers)
+        mySpaces.append(rectangle10 as! spaceWithPlayers)
+        mySpaces.append(rectangle11 as! spaceWithPlayers)
+        mySpaces.append(rectangle12 as! spaceWithPlayers)
+        mySpaces.append(rectangle13 as! spaceWithPlayers)
+        mySpaces.append(rectangle14 as! spaceWithPlayers)
+        mySpaces.append(rectangle15 as! spaceWithPlayers)
+        mySpaces.append(rectangle16 as! spaceWithPlayers)
+        mySpaces.append(rectangle17 as! spaceWithPlayers)
+        mySpaces.append(rectangle18 as! spaceWithPlayers)
+        mySpaces.append(rectangle19 as! spaceWithPlayers)
+        mySpaces.append(rectangle20 as! spaceWithPlayers)
+        mySpaces.append(rectangle21 as! spaceWithPlayers)
+        mySpaces.append(rectangle22 as! spaceWithPlayers)
+        mySpaces.append(rectangle23 as! spaceWithPlayers)
+        mySpaces.append(rectangle24 as! spaceWithPlayers)
+        mySpaces.append(rectangle25 as! spaceWithPlayers)
+        mySpaces.append(rectangle26 as! spaceWithPlayers)
+        mySpaces.append(rectangle27 as! spaceWithPlayers)
+        mySpaces.append(rectangle28 as! spaceWithPlayers)
+        mySpaces.append(rectangle29 as! spaceWithPlayers)
+        mySpaces.append(rectangle30 as! spaceWithPlayers)
 
     }
     
@@ -196,25 +192,36 @@ class gameboardViewController: UIViewController {
         // CREATE A LIST OF 32 RECTANGLES
 
         initializeGameSpacesOnScreen(&mySpaces, boundingBox: self.view.bounds)
-        
+    //    initializePlayersOnScreen()
     }
     
-    
-    
-    
+
+  
     @objc func didTap(sender: UITapGestureRecognizer) {
         //let width: CGFloat = self.view.bounds.width // 1000.0
        // let height: CGFloat = self.view.bounds.height // 1000.0
         
         let tapPoint = sender.location(in: self.view)
+      //  var playerToMove : Player
+        
+        func playersOnScreen (_ rect: CGRect) {
+            guard let context = UIGraphicsGetCurrentContext() else {
+              return
+            }
+            context.setFillColor(UIColor.red.cgColor)
+            //context.fill(bounds)
+          }
         
         if (self.view.bounds.contains(tapPoint))
         {
             for space in self.mySpaces {
                 if (space.myBox.contains(tapPoint)) {
                     // Change Colour
+     //               playerToMove = space.playersOnSpace[0]
+                    
                     space.myShapeLayer.fillColor = UIColor.yellow.cgColor
                 }
+                
             }
         }
     }

@@ -11,6 +11,9 @@
 		1654B3F52393197B00610F54 /* PlayerCharDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1654B3F42393197B00610F54 /* PlayerCharDetailVC.swift */; };
 		16CB46A8236783F2007A87C6 /* PlayerCharDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16CB46A6236783F2007A87C6 /* PlayerCharDetail.storyboard */; };
 		16CDE42723736F4500299EA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16CDE42523736F4500299EA6 /* Main.storyboard */; };
+		240EFCCA23A1706C0096ADED /* playerMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240EFCC923A1706C0096ADED /* playerMove.swift */; };
+		240EFCCC23A176140096ADED /* spaceWithPlayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240EFCCB23A176140096ADED /* spaceWithPlayers.swift */; };
+		240EFCCE23A178400096ADED /* player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240EFCCD23A178400096ADED /* player.swift */; };
 		503EFE2B236F68AB000BD5B0 /* Vehicle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 503EFE2A236F68AB000BD5B0 /* Vehicle.storyboard */; };
 		50F591272368F1EE00DCFC63 /* GameBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F591262368F1EE00DCFC63 /* GameBoard.storyboard */; };
 		675431D2236643D70004EF25 /* 9A1E4006134A4F7E8031723821238143.png in Resources */ = {isa = PBXBuildFile; fileRef = 675431D1236643D60004EF25 /* 9A1E4006134A4F7E8031723821238143.png */; };
@@ -59,6 +62,9 @@
 		1654B3F42393197B00610F54 /* PlayerCharDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCharDetailVC.swift; sourceTree = "<group>"; };
 		16CB46A6236783F2007A87C6 /* PlayerCharDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlayerCharDetail.storyboard; sourceTree = "<group>"; };
 		16CDE42623736F4500299EA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = goingToWork/Storyboards/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		240EFCC923A1706C0096ADED /* playerMove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playerMove.swift; sourceTree = "<group>"; };
+		240EFCCB23A176140096ADED /* spaceWithPlayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = spaceWithPlayers.swift; sourceTree = "<group>"; };
+		240EFCCD23A178400096ADED /* player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = player.swift; sourceTree = "<group>"; };
 		503EFE2A236F68AB000BD5B0 /* Vehicle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vehicle.storyboard; sourceTree = "<group>"; };
 		50F591262368F1EE00DCFC63 /* GameBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameBoard.storyboard; sourceTree = "<group>"; };
 		675431D1236643D60004EF25 /* 9A1E4006134A4F7E8031723821238143.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9A1E4006134A4F7E8031723821238143.png; sourceTree = "<group>"; };
@@ -133,6 +139,7 @@
 		B899218E235E468C00EDB8AF = {
 			isa = PBXGroup;
 			children = (
+				240EFCC923A1706C0096ADED /* playerMove.swift */,
 				B8992199235E468C00EDB8AF /* goingToWork */,
 				B89921B1235E468D00EDB8AF /* goingToWorkTests */,
 				B89921BC235E468D00EDB8AF /* goingToWorkUITests */,
@@ -153,9 +160,11 @@
 		B8992199235E468C00EDB8AF /* goingToWork */ = {
 			isa = PBXGroup;
 			children = (
-				928E3FA5239857B000935991 /* PlayerCharDetail.swift */,
 				50F591252368F15B00DCFC63 /* Storyboards */,
 				B899219A235E468C00EDB8AF /* AppDelegate.swift */,
+				240EFCCB23A176140096ADED /* spaceWithPlayers.swift */,
+				240EFCCD23A178400096ADED /* player.swift */,
+				928E3FA5239857B000935991 /* PlayerCharDetail.swift */,
 				CA16A099237CA7F800BAF68D /* gameboardViewController.swift */,
 				CA3C118E23736D59006D6F95 /* Space.swift */,
 				ABCCC8D623662FFC002463E3 /* Board.swift */,
@@ -335,6 +344,7 @@
 				B899219D235E468C00EDB8AF /* gameboardViewController.swift in Sources */,
 				E9E3E7F22374E5A300D636F2 /* SpinAnimationVC.swift in Sources */,
 				1654B3F52393197B00610F54 /* PlayerCharDetailVC.swift in Sources */,
+				240EFCCE23A178400096ADED /* player.swift in Sources */,
 				E9C605BD23957F3200B208D0 /* UIView+Rotation.swift in Sources */,
 				B899219D235E468C00EDB8AF /* gameboardViewController.swift in Sources */,
 				B899219B235E468C00EDB8AF /* AppDelegate.swift in Sources */,
@@ -345,7 +355,9 @@
 				E961BE2F2370D146006D383E /* GameInstructionsVC.swift in Sources */,
 				B89921A3235E468C00EDB8AF /* goingToWork.xcdatamodeld in Sources */,
 				E98A47BF2375F4AF003DEC8E /* Vehicle.swift in Sources */,
+				240EFCCC23A176140096ADED /* spaceWithPlayers.swift in Sources */,
 				CA16A09A237CA7F800BAF68D /* gameboardViewController.swift in Sources */,
+				240EFCCA23A1706C0096ADED /* playerMove.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i6g-Bh-MmT">
-    <device id="ipad12_9rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i6g-Bh-MmT">
+    <device id="ipad12_9rounded" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,18 +18,34 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="icd-2N-vLJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-601" y="-207"/>
+            <point key="canvasLocation" x="418" y="-173"/>
         </scene>
-        <!--Pause MenuVC-->
+        <!--InGameInstructions-->
+        <scene sceneID="1Qg-e6-sou">
+            <objects>
+                <viewControllerPlaceholder storyboardName="InGameInstructions" id="haV-A9-9NR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wgy-nh-tYo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="434" y="-146"/>
+        </scene>
+        <!--QuitGame-->
+        <scene sceneID="xJA-D5-WNK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="QuitGame" id="DeT-Ju-T9H" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SH4-kM-oZv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="429" y="-115"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="I4G-bU-tsv">
             <objects>
-                <viewController storyboardIdentifier="PauseMenu" id="i6g-Bh-MmT" customClass="PauseMenuVC" customModule="goingToWork" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PauseMenu" id="i6g-Bh-MmT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AI8-Fu-lod">
-                        <rect key="frame" x="0.0" y="0.0" width="712" height="1006.9200564096436"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r0S-gT-MEr">
-                                <rect key="frame" x="0.0" y="0.0" width="712" height="1007"/>
+                                <rect key="frame" x="156" y="90" width="712" height="1007"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BON-V6-dR2">
@@ -44,16 +62,19 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                         <state key="normal" title="Game instrcutions"/>
+                                        <connections>
+                                            <segue destination="haV-A9-9NR" kind="show" id="9iX-dI-wjM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1mj-Pc-Yv8">
                                         <rect key="frame" x="220" y="605" width="272" height="84"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                         <state key="normal" title="Quit Game">
-                                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="G8n-F9-oX9" kind="show" id="vIB-tj-aL9"/>
+                                            <segue destination="DeT-Ju-T9H" kind="show" id="xeV-x1-HzN"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -62,7 +83,7 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="V81-Nb-N9N"/>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="pJA-Ey-IBi"/>
                     </view>
                     <navigationItem key="navigationItem" id="rHJ-VV-Hz1"/>
@@ -71,176 +92,5 @@
             </objects>
             <point key="canvasLocation" x="-88.4765625" y="55.344070278184475"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="xke-Jd-wj3">
-            <objects>
-                <viewController storyboardIdentifier="QuitGame" id="aNm-wS-rDY" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hW3-2h-YhM">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XCQ-z8-r1e">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Are You sure you wish to exti the game? This will elimnate the current game process" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MVN-hU-sSG">
-                                        <rect key="frame" x="319" y="118" width="386" height="248"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="248" id="gDi-b1-8sw"/>
-                                        </constraints>
-                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6DT-RV-vcD">
-                                        <rect key="frame" x="422" y="678" width="180" height="74"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="74" id="Vvw-F2-PLg"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                        <state key="normal" title="Go Back"/>
-                                        <connections>
-                                            <segue destination="i6g-Bh-MmT" kind="show" id="Lh8-s7-Hyt"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMG-UU-LM0">
-                                        <rect key="frame" x="353.5" y="500" width="317" height="72"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                        <state key="normal" title="Yes, Quit game">
-                                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="1xb-xe-TNi" kind="show" id="5fi-pN-1Nq"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="MVN-hU-sSG" secondAttribute="bottom" constant="1000" id="0gp-pJ-MsC"/>
-                                    <constraint firstAttribute="trailing" secondItem="MVN-hU-sSG" secondAttribute="trailing" constant="319" id="FXm-c0-eun"/>
-                                    <constraint firstItem="MVN-hU-sSG" firstAttribute="centerX" secondItem="XMG-UU-LM0" secondAttribute="centerX" id="H7s-Wj-NMl"/>
-                                    <constraint firstItem="Bye-CD-64n" firstAttribute="bottom" secondItem="6DT-RV-vcD" secondAttribute="bottom" constant="614" id="LBH-jj-FbB"/>
-                                    <constraint firstItem="MVN-hU-sSG" firstAttribute="top" secondItem="Bye-CD-64n" secondAttribute="top" constant="118" id="Z5x-Ox-Loj"/>
-                                    <constraint firstItem="MVN-hU-sSG" firstAttribute="centerX" secondItem="6DT-RV-vcD" secondAttribute="centerX" id="eox-hi-ibL"/>
-                                    <constraint firstItem="MVN-hU-sSG" firstAttribute="centerX" secondItem="XCQ-z8-r1e" secondAttribute="centerX" id="fg8-Ou-ldU"/>
-                                    <constraint firstItem="XMG-UU-LM0" firstAttribute="top" secondItem="XCQ-z8-r1e" secondAttribute="top" constant="500" id="olY-v0-IUK"/>
-                                    <constraint firstItem="MVN-hU-sSG" firstAttribute="leading" secondItem="Bye-CD-64n" secondAttribute="leading" constant="319" id="yfa-We-q58"/>
-                                </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="69y-7X-Mtw"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="Bye-CD-64n"/>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="XCQ-z8-r1e" secondAttribute="trailing" id="5YL-vv-hmc"/>
-                            <constraint firstAttribute="bottom" secondItem="XCQ-z8-r1e" secondAttribute="bottom" id="Jl5-Pi-gfK"/>
-                            <constraint firstItem="XCQ-z8-r1e" firstAttribute="top" secondItem="uR9-cu-H3d" secondAttribute="top" id="MaA-wF-pDA"/>
-                            <constraint firstItem="XCQ-z8-r1e" firstAttribute="leading" secondItem="hW3-2h-YhM" secondAttribute="leading" id="ZOj-ru-7zu"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="uR9-cu-H3d"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="oxJ-vn-xLf"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jSo-jx-LG2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="743.5546875" y="54.904831625183014"/>
-        </scene>
-        <!--Main-->
-        <scene sceneID="CX1-tp-HfO">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="1xb-xe-TNi" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="UIK-jX-ZXJ"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="GTH-KU-DIP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1141" y="-143"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Dgf-dd-Qfa">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nnR-ag-hrt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="InGameInstructions" id="G8n-F9-oX9" sceneMemberID="viewController">
-                    <scrollView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" id="u9A-xe-0t5">
-                        <rect key="frame" x="0.0" y="0.0" width="712" height="1006.9200564096436"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="SQw-CV-xhM">
-                                <rect key="frame" x="32" y="20" width="631" height="846"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <mutableString key="text">Object of the Game:
-
-•	You will go on a road trip to get to work. 
-
-•	You will earn pieces of your Community Worker uniform along the way when you land on a Top, Bottom, or Hat space.
-
-•	When you earn all of the uniform items you get to move your car the end of the road, the last space which is your workplace. 
-
-•	Now that you have your uniform you can start your workday. You successfully completed your journey and arrived at work!
-
-Directions:
-
-•	Each child will choose a Community Worker that they want to be for the game. 
-
-•	Each child will choose a player piece Car to move along on the road to get to work.
-
-
-•	The Car will start at Home space to begin the game. 
-
-•	The first person will spin the wheel. Follow the directions of that section which the arrow lands upon. You will move a number of spaces forward or follow the specific directions.
-
-
-•	When the child lands on Top, Bottom, or Hat collect those pieces of the uniform.  
-
-•	You may land on a space that is a Local Business. Hang out there until your next turn.
-
-
-•	Or if you land on a Top, Bottom, or Hat Uniform space and you have that one already, you wait for your next turn. 
-
-•	Each child will take a turn until one player gets their whole uniform. That player goes to the end space, which is their workplace. They win the game and can start their work day!</mutableString>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKA-md-KHu">
-                                <rect key="frame" x="32" y="903" width="243" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="Back to Pause menu"/>
-                                <connections>
-                                    <segue destination="i6g-Bh-MmT" kind="show" id="pN5-mI-e1i"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEt-V2-XPz">
-                                <rect key="frame" x="478" y="901" width="185" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Back To Game"/>
-                                <connections>
-                                    <segue destination="xXM-vK-7dh" kind="show" id="xua-X0-lBW"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="aAE-NZ-fpS"/>
-                        <viewLayoutGuide key="contentLayoutGuide" id="sga-24-ggt"/>
-                        <viewLayoutGuide key="frameLayoutGuide" id="yzH-iz-Mhr"/>
-                    </scrollView>
-                    <navigationItem key="navigationItem" id="P9c-2c-d9e"/>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="1530.46875" y="54.904831625183014"/>
-        </scene>
-        <!--GameBoard-->
-        <scene sceneID="908-Kh-HSK">
-            <objects>
-                <viewControllerPlaceholder storyboardName="GameBoard" id="xXM-vK-7dh" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="W48-f0-CN8"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hsz-bT-DzB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1984" y="-77"/>
-        </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="pN5-mI-e1i"/>
-    </inferredMetricsTieBreakers>
 </document>

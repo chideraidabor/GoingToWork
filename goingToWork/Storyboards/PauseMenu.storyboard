@@ -56,10 +56,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yl-TK-1Nm">
-                                        <rect key="frame" x="127" y="269" width="458" height="84"/>
+                                        <rect key="frame" x="126" y="269" width="460" height="84"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                        <state key="normal" title="Game instrcutions"/>
+                                        <state key="normal" title="Game instructions"/>
                                         <connections>
                                             <segue destination="haV-A9-9NR" kind="show" id="9iX-dI-wjM"/>
                                         </connections>

@@ -101,12 +101,15 @@ class VehicleViewController: UIViewController {
            }
        }
 
-    @IBAction func playGameButton(_ sender: Any) {
-        if (currPlayer < 2){
-            performSegue(withIdentifier: "unwindSegueToVC", sender: self)
+       @IBAction func playGameButton(_ sender: Any) {
+        if (currPlayer<2){
+            currPlayer+=1
+            //performSegue(withIdentifier: "unwindToVC", sender: self)
+            performSegue(withIdentifier: "toNextPlayer", sender: self)
+            
         }
-        else {
-            performSegue(withIdentifier: "toGameBoard", sender: nil)
+        else{
+            performSegue(withIdentifier: "startGame", sender: self)
         }
     }
        
@@ -115,12 +118,18 @@ class VehicleViewController: UIViewController {
     }
     
        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "toGameBoard" {
+            if segue.identifier == "startGame" {
                let vc = segue.destination as! gameboardViewController
                //detailItem?.vehicleImage = blackCar.image
             }
-            if segue.identifier == "loopTwice" {
+            if segue.identifier == "unwindToVC" {
+                
             }
+            if segue.identifier == "toNextPlayer"{
+                var vc = segue.destination as! PlayerCharDetailVC
+               vc.currentNoOfPlayer = self.currPlayer
+                
+        }
        }
     
     

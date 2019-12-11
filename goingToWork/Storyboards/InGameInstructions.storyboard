@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="q9d-sr-PqM">
-                                        <rect key="frame" x="0.0" y="28" width="976" height="1109"/>
+                                        <rect key="frame" x="0.0" y="28" width="976" height="847"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Object of the Game:
@@ -54,20 +54,11 @@ Directions:
 •	Or if you land on a Top, Bottom, or Hat Uniform space and you have that one already, you wait for your next turn. 
 
 •	Each child will take a turn until one player gets their whole uniform. That player goes to the end space, which is their workplace. They win the game and can start their work day!</string>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMh-6z-UcJ">
-                                        <rect key="frame" x="612" y="1180" width="372" height="84"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
-                                        <state key="normal" title="Resume Game"/>
-                                        <connections>
-                                            <segue destination="Izv-1X-ggI" kind="show" id="cg9-Ms-WD6"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZER-Ho-jP4">
-                                        <rect key="frame" x="8" y="1180" width="346" height="84"/>
+                                        <rect key="frame" x="8" y="883" width="346" height="84"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                         <state key="normal" title="Back to Menu">
@@ -75,6 +66,15 @@ Directions:
                                         </state>
                                         <connections>
                                             <segue destination="jCt-7c-TVa" kind="show" id="q6C-fR-ivY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMh-6z-UcJ">
+                                        <rect key="frame" x="612" y="882" width="372" height="84"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                        <state key="normal" title="Resume Game"/>
+                                        <connections>
+                                            <segue destination="Izv-1X-ggI" kind="show" id="cg9-Ms-WD6"/>
                                         </connections>
                                     </button>
                                 </subviews>

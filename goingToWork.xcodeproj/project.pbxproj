@@ -13,6 +13,7 @@
 		503EFE2B236F68AB000BD5B0 /* Vehicle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 503EFE2A236F68AB000BD5B0 /* Vehicle.storyboard */; };
 		50F591272368F1EE00DCFC63 /* GameBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50F591262368F1EE00DCFC63 /* GameBoard.storyboard */; };
 		674850DF239C7753003D2CCF /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674850DE239C7753003D2CCF /* Player.swift */; };
+		674850E323A06B04003D2CCF /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674850E223A06B04003D2CCF /* Game.swift */; };
 		675431D2236643D70004EF25 /* 9A1E4006134A4F7E8031723821238143.png in Resources */ = {isa = PBXBuildFile; fileRef = 675431D1236643D60004EF25 /* 9A1E4006134A4F7E8031723821238143.png */; };
 		677E88BD236F6B270058F086 /* selectNoPlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 677E88BC236F6B270058F086 /* selectNoPlayer.storyboard */; };
 		ABCCC8D723662FFC002463E3 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCCC8D623662FFC002463E3 /* Board.swift */; };
@@ -57,6 +58,7 @@
 		503EFE2A236F68AB000BD5B0 /* Vehicle.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Vehicle.storyboard; sourceTree = "<group>"; };
 		50F591262368F1EE00DCFC63 /* GameBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameBoard.storyboard; sourceTree = "<group>"; };
 		674850DE239C7753003D2CCF /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		674850E223A06B04003D2CCF /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		675431D1236643D60004EF25 /* 9A1E4006134A4F7E8031723821238143.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9A1E4006134A4F7E8031723821238143.png; sourceTree = "<group>"; };
 		677E88BC236F6B270058F086 /* selectNoPlayer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = selectNoPlayer.storyboard; sourceTree = "<group>"; };
 		ABCCC8D623662FFC002463E3 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				16CB46A6236783F2007A87C6 /* PlayerCharDetail.storyboard */,
 				E9701E982379FCDF00336EBF /* ArtistCredits.storyboard */,
 				674850DE239C7753003D2CCF /* Player.swift */,
+				674850E223A06B04003D2CCF /* Game.swift */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B899219D235E468C00EDB8AF /* gameboardViewController.swift in Sources */,
+				674850E323A06B04003D2CCF /* Game.swift in Sources */,
 				B899219D235E468C00EDB8AF /* gameboardViewController.swift in Sources */,
 				E9E3E7F22374E5A300D636F2 /* SpinAnimationVC.swift in Sources */,
 				B899219D235E468C00EDB8AF /* gameboardViewController.swift in Sources */,

@@ -246,7 +246,23 @@ class gameboardViewController: UIViewController, UIViewControllerPreviewingDeleg
         }
     }
     
+    var location = CGPoint(x: 0, y: 0)
     
+    @IBOutlet weak var cutcutmania: UIImageView!
+    override func viewDidLayoutSubviews() {
+        
+    }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let touch : UITouch! = touches.first
+        location = touch.location(in: self.view)
+        cutcutmania.center = location
+    }
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let touch : UITouch! = touches.first
+        location = touch.location(in: self.view)
+        cutcutmania.center = location
+    }
     
   
 }
